@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For My Eternal Love - Whispering Garden of Our Souls</title>
+    <title>For Taso - Our Story</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
             font-family: 'Inter', sans-serif;
             overflow-x: hidden;
             margin: 0;
-            background: linear-gradient(-45deg, #FEF3C7, #FDE68A, #FCD34D, #F59E0B, #D97706, #F59E0B, #FCD34D, #FDE68A, #FEF3C7);
+            background: linear-gradient(-45deg, #FEF2F2, #FEE2E2, #FECACA, #FCA5A5, #F87171, #FCA5A5, #FECACA, #FEE2E2, #FEF2F2);
             background-size: 800% 800%;
             animation: etherealShift 35s ease infinite;
         }
@@ -37,12 +37,12 @@
         }
 
         .glow-soft {
-            box-shadow: 0 0 15px rgba(217, 119, 6, 0.3);
+            box-shadow: 0 0 15px rgba(239, 68, 68, 0.3);
             transition: box-shadow 0.4s;
         }
 
         .glow-soft:hover {
-            box-shadow: 0 0 25px rgba(217, 119, 6, 0.5);
+            box-shadow: 0 0 25px rgba(239, 68, 68, 0.5);
         }
 
         /* Micro-animations and cursor */
@@ -80,7 +80,7 @@
         /* Ethereal particles */
         .ethereal-particle {
             position: absolute;
-            background: radial-gradient(circle, rgba(255,255,255,0.6), rgba(217,119,6,0.25));
+            background: radial-gradient(circle, rgba(255,255,255,0.6), rgba(239,68,68,0.25));
             border-radius: 50%;
             animation: float 18s linear infinite;
             pointer-events: none;
@@ -99,16 +99,16 @@
             background: rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(16px);
             border-radius: 20px;
-            border: 1px solid rgba(217, 119, 6, 0.2);
-            box-shadow: 0 3px 20px rgba(217, 119, 6, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            box-shadow: 0 3px 20px rgba(239, 68, 68, 0.1);
         }
 
         .glass-card {
             background: rgba(255, 255, 255, 0.14);
             backdrop-filter: blur(12px);
             border-radius: 14px;
-            border: 1px solid rgba(217, 119, 6, 0.25);
-            box-shadow: 0 8px 32px rgba(217, 119, 6, 0.15);
+            border: 1px solid rgba(239, 68, 68, 0.25);
+            box-shadow: 0 8px 32px rgba(239, 68, 68, 0.15);
         }
 
         /* Animations */
@@ -134,11 +134,11 @@
         .btn-ethereal {
             position: relative;
             overflow: hidden;
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(217, 119, 6, 0.1));
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(239, 68, 68, 0.1));
             border: 1px solid rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(8px);
             transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
-            box-shadow: 0 4px 16px rgba(217, 119, 6, 0.1);
+            box-shadow: 0 4px 16px rgba(239, 68, 68, 0.1);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -150,8 +150,8 @@
 
         .btn-ethereal:hover {
             transform: translateY(-1px) scale(1.01);
-            box-shadow: 0 10px 28px rgba(217, 119, 6, 0.15);
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(217, 119, 6, 0.2));
+            box-shadow: 0 10px 28px rgba(239, 68, 68, 0.15);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(239, 68, 68, 0.2));
         }
 
         /* Flower effects with hover preview */
@@ -210,10 +210,11 @@
 
         /* Text gradients */
         .text-gradient {
-            background: linear-gradient(135deg, #D97706, #F59E0B, #FCD34D);
+            background: linear-gradient(135deg, #DC2626, #EF4444, #F87171);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         /* Quote rotator */
@@ -444,15 +445,15 @@
 
     <!-- Navigation Bar -->
     <nav class="fixed top-0 left-0 right-0 z-20 glass-ultra p-4 flex justify-center gap-4 sm:gap-6">
-        <button id="nav-home" class="btn-ethereal text-gray-800 font-light py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Return to home">Home</button>
-        <button id="nav-garden" class="btn-ethereal text-gray-800 font-light py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="View garden">Garden</button>
-        <button id="nav-timeline" class="btn-ethereal text-gray-800 font-light py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="View timeline">Timeline</button>
-        <button id="nav-love-notes" class="btn-ethereal text-gray-800 font-light py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="View love notes">💌 Notes</button>
-        <button id="nav-add-memory" class="btn-ethereal text-gray-800 font-light py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Add memory">Add Memory</button>
-        <button id="voice-recorder-btn" class="btn-ethereal text-gray-800 font-light py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Record voice message">🎤 Record</button>
-        <button id="voice-settings-btn" class="btn-ethereal text-gray-800 font-light py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Voice settings">🔊 Settings</button>
-        <button id="export-btn" class="btn-ethereal text-gray-800 font-light py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Export memories">📄 Export</button>
-        <button id="toggle-audio" class="btn-ethereal text-gray-800 font-light py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Toggle background audio">♫ Play/Pause</button>
+        <button id="nav-home" class="btn-ethereal text-amber-900 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Return to home">Home</button>
+        <button id="nav-garden" class="btn-ethereal text-amber-900 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="View gallery">Gallery</button>
+        <button id="nav-timeline" class="btn-ethereal text-amber-900 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="View timeline">Timeline</button>
+        <button id="nav-love-notes" class="btn-ethereal text-amber-900 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="View love notes">💌 Notes</button>
+        <button id="nav-add-memory" class="btn-ethereal text-amber-900 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Add memory">Add Memory</button>
+        <button id="voice-recorder-btn" class="btn-ethereal text-amber-900 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Record voice message">🎤 Record</button>
+        <button id="voice-settings-btn" class="btn-ethereal text-amber-900 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Open voice settings">⚙️ Settings</button>
+        <button id="export-btn" class="btn-ethereal text-amber-900 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Export memories">📄 Export</button>
+        <button id="toggle-audio" class="btn-ethereal text-amber-900 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Toggle background audio">♫ Play/Pause</button>
     </nav>
 
     <!-- Main Content Wrapper -->
@@ -461,11 +462,11 @@
         <section id="home" class="min-h-screen flex flex-col items-center justify-center text-center p-4 sm:p-6 transition-all duration-700 ease-in-out">
             <div class="glass-ultra p-8 sm:p-12 rounded-2xl organic-border max-w-md sm:max-w-xl md:max-w-2xl mx-auto transform hover:scale-[1.015] transition-all duration-500 fade-in glow-soft">
                 <div class="text-4xl sm:text-5xl mb-4 animate-pulse opacity-80">✨</div>
-                <h1 class="font-serif italic text-3xl sm:text-5xl md:text-6xl text-gradient mb-4 leading-tight">For My Eternal Love, Taso Tsiklauri</h1>
-                <p class="font-script text-lg sm:text-xl md:text-2xl text-gray-700 mb-2 italic">A Whispering Garden of Our Souls</p>
-                <p class="text-gray-600 text-sm sm:text-base md:text-lg mb-6 opacity-75 font-light">Where whispers of time bloom into forever. A dedication: In your eyes, I found my forever.</p>
-                <button id="enter-garden" class="btn-ethereal text-gray-800 font-light py-3 px-8 rounded-full text-base sm:text-lg relative overflow-hidden" aria-label="Enter the whispering garden">
-                    <span class="relative z-10">Awaken the Garden ✧</span>
+                <h1 class="font-serif italic text-3xl sm:text-5xl md:text-6xl text-gradient mb-4 leading-tight">For Taso</h1>
+                <p class="font-script text-lg sm:text-xl md:text-2xl text-amber-800 mb-2 italic">Our Story So Far</p>
+                <p class="text-amber-700 text-sm sm:text-base md:text-lg mb-6 opacity-90 font-light">A collection of our memories, big and small. A dedication to the life we're building together.</p>
+                <button id="enter-garden" class="btn-ethereal text-amber-900 font-medium py-3 px-8 rounded-full text-base sm:text-lg relative overflow-hidden" aria-label="Enter the memory gallery">
+                    <span class="relative z-10">Enter</span>
                 </button>
             </div>
         </section>
@@ -473,16 +474,16 @@
         <!-- Garden Gallery Section -->
         <section id="garden" class="hidden min-h-screen p-4 sm:p-8 md:p-12">
             <div class="text-center mb-12 fade-in">
-                <h2 class="font-serif italic text-3xl sm:text-4xl md:text-5xl text-gradient mb-4 leading-tight">Our Whispering Garden</h2>
-                <p class="text-base sm:text-lg md:text-xl text-gray-700 font-script mb-4 opacity-85 italic">Caress a bloom to awaken a veiled reverie</p>
+                <h2 class="font-serif italic text-3xl sm:text-4xl md:text-5xl text-gradient mb-4 leading-tight">Our Gallery</h2>
+                <p class="text-base sm:text-lg md:text-xl text-amber-800 font-script mb-4 opacity-85 italic">Click on a memory to view it</p>
                 <div class="w-16 sm:w-20 h-0.5 bg-gradient-to-r from-transparent via-gray-300 to-transparent mx-auto rounded-full opacity-50"></div>
             </div>
 
             <div id="garden-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 sm:gap-6 md:gap-8 max-w-7xl mx-auto mb-12 parallax"></div>
 
             <div class="text-center glass-card p-6 sm:p-8 rounded-xl max-w-md sm:max-w-lg md:max-w-2xl mx-auto slide-up organic-border glow-soft">
-                <p class="font-script text-xl sm:text-2xl md:text-3xl text-gradient mb-4 leading-relaxed italic">
-                    "In this garden, our love defies the seasons, eternal as the stars"
+                <p class="font-script text-xl sm:text-2xl md:text-3xl text-amber-800 mb-4 leading-relaxed italic">
+                    "A few of my favorite moments with you."
                 </p>
                 <div class="text-xl sm:text-2xl opacity-60">✧ ◇ ✧</div>
             </div>
@@ -490,7 +491,7 @@
 
         <!-- Timeline Navigation -->
         <section id="timeline" class="hidden py-12 px-4 sm:px-8 md:px-12 bg-gray-900/3">
-            <h2 class="font-serif italic text-2xl sm:text-3xl md:text-4xl text-gradient text-center mb-8 leading-tight">Our Timeless Journey</h2>
+            <h2 class="font-serif italic text-2xl sm:text-3xl md:text-4xl text-gradient text-center mb-8 leading-tight">Our Journey</h2>
             <div id="timeline-grid" class="max-w-3xl md:max-w-4xl mx-auto space-y-6 sm:space-y-8"></div>
         </section>
         
@@ -498,8 +499,8 @@
         <section id="love-notes" class="hidden py-12 px-4 sm:px-8 md:px-12">
             <h2 class="font-serif italic text-2xl sm:text-3xl md:text-4xl text-gradient text-center mb-8 leading-tight">Love Notes</h2>
             <div class="text-center glass-card p-6 sm:p-8 rounded-xl max-w-md sm:max-w-lg md:max-w-2xl mx-auto slide-up organic-border glow-soft mb-8">
-                <p class="font-script text-lg sm:text-xl text-gray-700 mb-6 italic">Write a note about how you feel about each other</p>
-                <button id="add-love-note-btn" class="btn-ethereal text-gray-800 font-light py-3 px-8 rounded-full text-base sm:text-lg">Write a Love Note 💌</button>
+                <p class="font-script text-lg sm:text-xl text-amber-800 mb-6 italic">Write a note about how you feel about each other</p>
+                <button id="add-love-note-btn" class="btn-ethereal text-amber-900 font-medium py-3 px-8 rounded-full text-base sm:text-lg">Write a Love Note 💌</button>
             </div>
             <div id="love-notes-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
                 <!-- Love notes will be populated here -->
@@ -508,18 +509,18 @@
 
         <!-- Add Memory Section -->
         <section id="add-memory" class="hidden py-12 px-4 sm:px-8 md:px-12">
-            <h2 class="font-serif italic text-2xl sm:text-3xl md:text-4xl text-gradient text-center mb-8 leading-tight">Plant a New Bloom</h2>
+            <h2 class="font-serif italic text-2xl sm:text-3xl md:text-4xl text-gradient text-center mb-8 leading-tight">Add a New Memory</h2>
             <form id="memory-form" class="glass-card p-6 sm:p-8 rounded-xl max-w-md sm:max-w-lg mx-auto slide-up organic-border glow-soft">
-                <input type="text" id="new-caption" placeholder="Whisper your memory..." class="w-full mb-4 p-3 rounded border border-gray-300/50 font-script italic text-gray-700">
+                <input type="text" id="new-caption" placeholder="What do you remember about this moment?" class="w-full mb-4 p-3 rounded border border-amber-300/50 font-script italic text-amber-900 bg-white/80">
                 
                 <!-- File Upload Section -->
                 <div class="mb-4">
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Choose Photo or Video</label>
+                    <label class="block text-sm font-medium text-amber-800 mb-2">Upload Photo or Video</label>
                     <div class="relative">
                         <input type="file" id="new-file" accept="image/*,video/*" class="hidden">
-                        <button type="button" id="file-browse-btn" class="w-full p-3 rounded border border-gray-300/50 text-gray-700 bg-white/80 backdrop-blur-sm hover:bg-white/90 transition-all duration-200 flex items-center justify-center gap-2">
+                        <button type="button" id="file-browse-btn" class="w-full p-3 rounded border border-amber-300/50 text-amber-900 bg-white/80 backdrop-blur-sm hover:bg-white/90 transition-all duration-200 flex items-center justify-center gap-2">
                             <span id="file-icon">📷</span>
-                            <span id="file-text">Browse Gallery</span>
+                            <span id="file-text">Choose from Gallery</span>
                         </button>
                     </div>
                     <div id="file-preview" class="mt-2 hidden">
@@ -531,9 +532,9 @@
                     </div>
                 </div>
                 
-                <input type="text" id="new-flower" placeholder="Choose a symbol (e.g., 🌹)..." class="w-full mb-4 p-3 rounded border border-gray-300/50 text-gray-700">
-                <input type="date" id="new-date" class="w-full mb-4 p-3 rounded border border-gray-300/50 text-gray-700">
-                <button type="submit" class="btn-ethereal w-full text-gray-800 font-light py-3 rounded-full">Plant the Memory ✿</button>
+                <input type="text" id="new-flower" placeholder="Add an emoji or symbol..." class="w-full mb-4 p-3 rounded border border-amber-300/50 text-amber-900 bg-white/80">
+                <input type="date" id="new-date" class="w-full mb-4 p-3 rounded border border-amber-300/50 text-amber-900 bg-white/80">
+                <button type="submit" class="btn-ethereal w-full text-amber-900 font-medium py-3 rounded-full">Save Memory</button>
             </form>
         </section>
     </div>
@@ -553,8 +554,8 @@
                 </button>
                 <div id="lightbox-media" class="w-full h-auto object-cover rounded-xl mb-4 max-h-[60vh] sm:max-h-[70vh] shadow-lg"></div>
                 <div class="text-center">
-                    <p id="lightbox-caption" class="text-gray-800 text-base sm:text-lg md:text-xl font-script leading-relaxed mb-2 italic"></p>
-                    <p id="lightbox-date" class="text-gray-500 text-sm mb-4 font-light"></p>
+                    <p id="lightbox-caption" class="text-amber-900 text-base sm:text-lg md:text-xl font-script leading-relaxed mb-2 italic"></p>
+                    <p id="lightbox-date" class="text-amber-700 text-sm mb-4 font-light"></p>
                     <div class="text-lg sm:text-xl opacity-55">◇</div>
                 </div>
             </div>
@@ -568,16 +569,16 @@
                 <button id="close-letter" class="absolute -top-2 -right-2 glass-ultra text-gray-700 rounded-full h-8 w-8 flex items-center justify-center text-base font-light shadow-md hover:scale-110 transition-all duration-300 border border-white/15" aria-label="Close letter">
                     ✕
                 </button>
-                <h3 class="font-serif italic text-2xl text-gradient mb-4">A Secret Letter</h3>
-                <p class="font-script text-lg text-gray-800 italic leading-relaxed">My dearest Taso Tsiklauri,<br>Each bloom in this garden is a testament to our enduring love. As you explore, remember that every memory is but a chapter in our endless story. With all my heart, forever yours.</p>
-                <div class="text-center mt-4 text-xl opacity-60">♡</div>
+                <h3 class="font-serif italic text-2xl text-gradient mb-4">A Letter for You</h3>
+                <p class="font-script text-lg text-amber-900 italic leading-relaxed">My dearest Taso,<br>I wanted to create a special place for us—a quiet spot to keep our memories and watch our story grow. I hope you like it. Every moment with you is my favorite.<br>With all my love,</p>
+                <div class="text-center mt-4 text-xl opacity-60">[Your Name Here]</div>
             </div>
         </div>
     </div>
 
     <!-- Footer with Quote Rotator -->
     <footer class="fixed bottom-0 left-0 right-0 z-20 glass-ultra p-4 text-center">
-        <p id="quote-rotator" class="font-script text-sm sm:text-base text-gray-600 opacity-70 quote-rotator" aria-live="polite"></p>
+        <p id="quote-rotator" class="font-script text-sm sm:text-base text-amber-800 opacity-80 quote-rotator" aria-live="polite"></p>
     </footer>
 
     <!-- Screen reader announcements -->
@@ -598,12 +599,12 @@
                 <button id="close-recorder" class="absolute -top-2 -right-2 glass-ultra text-gray-700 rounded-full h-8 w-8 flex items-center justify-center text-base font-light shadow-md hover:scale-110 transition-all duration-300 border border-white/15" aria-label="Close recorder">
                     ✕
                 </button>
-                <h3 class="font-serif italic text-xl text-gradient mb-4">Record a Love Message</h3>
+                <h3 class="font-serif italic text-xl text-gradient mb-4">Record a Message</h3>
                 <div class="text-center">
-                    <button id="record-btn" class="btn-ethereal text-gray-800 font-light py-3 px-6 rounded-full text-base mb-4">
+                    <button id="record-btn" class="btn-ethereal text-amber-900 font-medium py-3 px-6 rounded-full text-base mb-4">
                         🎤 Start Recording
                     </button>
-                    <div id="recording-status" class="text-sm text-gray-600 mb-4 hidden">
+                    <div id="recording-status" class="text-sm text-amber-700 mb-4 hidden">
                         <div class="flex items-center justify-center gap-2">
                             <div class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
                             Recording... Click to stop
@@ -611,8 +612,8 @@
                     </div>
                     <audio id="recorded-audio" controls class="w-full mb-4 hidden"></audio>
                     <div class="flex gap-2 justify-center">
-                        <button id="save-recording" class="btn-ethereal text-gray-800 font-light py-2 px-4 rounded-full text-sm hidden">Save Message</button>
-                        <button id="play-recording" class="btn-ethereal text-gray-800 font-light py-2 px-4 rounded-full text-sm hidden">Play Back</button>
+                        <button id="save-recording" class="btn-ethereal text-amber-900 font-medium py-2 px-4 rounded-full text-sm hidden">Save Message</button>
+                        <button id="play-recording" class="btn-ethereal text-amber-900 font-medium py-2 px-4 rounded-full text-sm hidden">Play</button>
                     </div>
                 </div>
             </div>
@@ -626,11 +627,11 @@
                 <button id="close-voice-settings" class="absolute -top-2 -right-2 glass-ultra text-gray-700 rounded-full h-8 w-8 flex items-center justify-center text-base font-light shadow-md hover:scale-110 transition-all duration-300 border border-white/15" aria-label="Close voice settings">
                     ✕
                 </button>
-                <h3 class="font-serif italic text-2xl text-gradient mb-6 text-center">Voice Settings</h3>
+                <h3 class="font-serif italic text-2xl text-gradient mb-6 text-center">Voice & Audio Settings</h3>
                 
                 <!-- Voice Selection with Preview -->
                 <div class="mb-6">
-                    <label class="block text-sm font-medium text-gray-700 mb-3">Choose Voice</label>
+                    <label class="block text-sm font-medium text-amber-800 mb-3">Text-to-Speech Voice</label>
                     <div class="relative">
                         <select id="voice-select" class="w-full p-3 border border-gray-300/50 rounded-xl text-gray-700 bg-white/80 backdrop-blur-sm focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-200">
                             <option value="auto">🎵 Auto-select best voice</option>
@@ -643,7 +644,7 @@
                     </div>
                     <button id="test-voice" class="w-full mt-3 btn-ethereal text-gray-800 font-light py-2 px-4 rounded-full text-sm flex items-center justify-center gap-2">
                         <span>🎤</span>
-                        <span>Test This Voice</span>
+                        <span>Test Voice</span>
                     </button>
                 </div>
 
@@ -652,7 +653,7 @@
                     <!-- Speed Control -->
                     <div class="bg-white/30 rounded-xl p-4 backdrop-blur-sm">
                         <div class="flex items-center justify-between mb-2">
-                            <label class="text-sm font-medium text-gray-700 flex items-center gap-2">
+                            <label class="text-sm font-medium text-amber-800 flex items-center gap-2">
                                 <span>⚡</span>
                                 <span>Speed</span>
                             </label>
@@ -669,7 +670,7 @@
                     <!-- Pitch Control -->
                     <div class="bg-white/30 rounded-xl p-4 backdrop-blur-sm">
                         <div class="flex items-center justify-between mb-2">
-                            <label class="text-sm font-medium text-gray-700 flex items-center gap-2">
+                            <label class="text-sm font-medium text-amber-800 flex items-center gap-2">
                                 <span>🎵</span>
                                 <span>Pitch</span>
                             </label>
@@ -686,7 +687,7 @@
                     <!-- Volume Control -->
                     <div class="bg-white/30 rounded-xl p-4 backdrop-blur-sm">
                         <div class="flex items-center justify-between mb-2">
-                            <label class="text-sm font-medium text-gray-700 flex items-center gap-2">
+                            <label class="text-sm font-medium text-amber-800 flex items-center gap-2">
                                 <span>🔊</span>
                                 <span>Volume</span>
                             </label>
@@ -704,7 +705,7 @@
                 <!-- Action Buttons -->
                 <div class="flex gap-3 mt-6">
                     <button id="reset-voice-settings" class="flex-1 btn-ethereal text-gray-800 font-light py-3 px-4 rounded-full text-sm">
-                        🔄 Reset
+                        🔄 Reset Defaults
                     </button>
                     <button id="save-voice-settings" class="flex-1 btn-ethereal text-gray-800 font-light py-3 px-4 rounded-full text-sm bg-gradient-to-r from-indigo-500 to-purple-500 text-white">
                         💾 Save Settings
@@ -728,9 +729,9 @@
                 </button>
                 <h3 class="font-serif italic text-xl text-gradient mb-4">Write a Love Note</h3>
                 <form id="love-note-form">
-                    <textarea id="love-note-text" placeholder="Write your feelings here..." class="w-full mb-4 p-3 rounded border border-gray-300/50 font-script italic text-gray-700 h-32 resize-none"></textarea>
-                    <input type="text" id="love-note-title" placeholder="Title (optional)" class="w-full mb-4 p-3 rounded border border-gray-300/50 font-script italic text-gray-700">
-                    <button type="submit" class="btn-ethereal w-full text-gray-800 font-light py-3 rounded-full">Save Love Note 💌</button>
+                    <textarea id="love-note-text" placeholder="Write your feelings here..." class="w-full mb-4 p-3 rounded border border-amber-300/50 font-script italic text-amber-900 bg-white/80 h-32 resize-none"></textarea>
+                    <input type="text" id="love-note-title" placeholder="Title (optional)" class="w-full mb-4 p-3 rounded border border-amber-300/50 font-script italic text-amber-900 bg-white/80">
+                    <button type="submit" class="btn-ethereal w-full text-amber-900 font-medium py-3 rounded-full">Save Love Note 💌</button>
                 </form>
             </div>
         </div>
@@ -743,14 +744,14 @@
                 <button id="close-export" class="absolute -top-2 -right-2 glass-ultra text-gray-700 rounded-full h-8 w-8 flex items-center justify-center text-base font-light shadow-md hover:scale-110 transition-all duration-300 border border-white/15" aria-label="Close export">
                     ✕
                 </button>
-                <h3 class="font-serif italic text-xl text-gradient mb-4">Export Our Love Story</h3>
+                <h3 class="font-serif italic text-xl text-gradient mb-4">Export Our Story</h3>
                 <div class="text-center space-y-4">
-                    <p class="text-gray-600 mb-6">Choose how you'd like to preserve our memories</p>
-                    <button id="export-json" class="btn-ethereal text-gray-800 font-light py-3 px-6 rounded-full text-base w-full">
-                        📄 Export as JSON (Data Backup)
+                    <p class="text-amber-700 mb-6">Save a copy of our memories.</p>
+                    <button id="export-json" class="btn-ethereal text-amber-900 font-medium py-3 px-6 rounded-full text-base w-full">
+                        📄 Export as Data File (JSON)
                     </button>
-                    <button id="export-text" class="btn-ethereal text-gray-800 font-light py-3 px-6 rounded-full text-base w-full">
-                        📝 Export as Love Letter (Text)
+                    <button id="export-text" class="btn-ethereal text-amber-900 font-medium py-3 px-6 rounded-full text-base w-full">
+                        📝 Export as Plain Text (.txt)
                     </button>
                     <p class="text-xs text-gray-500 mt-4">
                         Total memories: <span id="memory-count">0</span>
@@ -762,26 +763,27 @@
 
 <script>
     const memories = [
-        { photoUrl: 'Assets/_DSC1205.JPG', caption: 'In that twilight hush, I heard eternity in your gaze, a home woven from starlight.', flower: '🤍', isVideo: false, date: '2024-01-15' },
-        { photoUrl: 'Assets/_DSC1913 copy.jpg', caption: 'Sunset\'s golden veil draped our dreams, birthing realities from fleeting light.', flower: '🌾', isVideo: false, date: '2024-02-20' },
-        { photoUrl: 'Assets/_DSC2149.jpg', caption: 'With each shared stride, we trace constellations unseen by mortal eyes.', flower: '✦', isVideo: false, date: '2024-03-10' },
-        { photoUrl: 'Assets/_DSC2184 copy.jpg', caption: 'Amid our poetic tempests, perfection emerged from harmonious disarray.', flower: '◊', isVideo: false, date: '2024-04-05' },
-        { photoUrl: 'Assets/att.xOKG4HmHSwEs_egm4cG18fb_0-JcOPvWE3EL--soZWI.JPG', caption: 'Through tempests of heart and sky, you anchor my wandering soul.', flower: '🌙', isVideo: false, date: '2024-05-12' },
-        { photoUrl: 'Assets/c60b2d44-8c2e-4b89-8db3-92c29c363cd0.JPG', caption: 'Another cycle of the sun, yet our vows echo infinitely through time.', flower: '✨', isVideo: false, date: '2024-06-18' },
-        { photoUrl: 'Assets/efbe8129-6156-4d19-809f-137921aaa0ad.jpg', caption: 'Your melody of joy orchestrates the cosmos into sublime order.', flower: '☾', isVideo: false, date: '2024-07-25' },
-        { photoUrl: 'Assets/IMG_2826 5.jpg', caption: 'Atop earthly heights, our union ascends beyond the visible horizon.', flower: '⋄', isVideo: false, date: '2024-08-30' },
-        { photoUrl: 'Assets/IMG_3905.jpg', caption: 'Crafting legends from threads of ritual, binding our essences eternally.', flower: '❋', isVideo: false, date: '2024-09-14' },
-        { photoUrl: 'Assets/IMG_4710.jpg', caption: 'In quietude, our spirits compose a symphony known only to lovers.', flower: '◦', isVideo: false, date: '2024-10-22' },
+        { photoUrl: 'Assets/_DSC1205.JPG', caption: 'The light was perfect that evening. I\'ll never forget the way you looked right at this moment.', flower: '🤍', isVideo: false, date: '2024-01-15' },
+        { photoUrl: 'Assets/_DSC1913 copy.jpg', caption: 'That sunset was incredible, but sharing it with you was the best part.', flower: '🌾', isVideo: false, date: '2024-02-20' },
+        { photoUrl: 'Assets/_DSC2149.jpg', caption: 'Just a simple walk, but one of my favorite days with you.', flower: '✦', isVideo: false, date: '2024-03-10' },
+        { photoUrl: 'Assets/_DSC2184 copy.jpg', caption: 'I love how we can be silly together. This picture always makes me smile.', flower: '◊', isVideo: false, date: '2024-04-05' },
+        { photoUrl: 'Assets/att.xOKG4HmHSwEs_egm4cG18fb_0-JcOPvWE3EL--soZWI.JPG', caption: 'Remember how cold it was? So worth it for this view and this moment.', flower: '🌙', isVideo: false, date: '2024-05-12' },
+        { photoUrl: 'Assets/c60b2d44-8c2e-4b89-8db3-92c29c363cd0.JPG', caption: 'Another year together, and I love you more than ever.', flower: '✨', isVideo: false, date: '2024-06-18' },
+        { photoUrl: 'Assets/efbe8129-6156-4d19-809f-137921aaa0ad.jpg', caption: 'The sound of your laugh is my favorite sound in the world.', flower: '☾', isVideo: false, date: '2024-07-25' },
+        { photoUrl: 'Assets/IMG_2826 5.jpg', caption: 'On top of the world with you.', flower: '⋄', isVideo: false, date: '2024-08-30' },
+        { photoUrl: 'Assets/IMG_3905.jpg', caption: 'Little traditions like this mean so much to me.', flower: '❋', isVideo: false, date: '2024-09-14' },
+        { photoUrl: 'Assets/IMG_4710.jpg', caption: 'One of those quiet, perfect moments I\'ll always treasure.', flower: '◦', isVideo: false, date: '2024-10-22' },
     ];
 
     const quotes = [
-        "In your light I learn how to love. – Rumi",
-        "To love and be loved is to feel the sun from both sides. – David Viscott",
-        "You know you're in love when you can't fall asleep because reality is finally better than your dreams. – Dr. Seuss",
-        "I saw that you were perfect, and so I loved you. – Unknown",
-        "Love is composed of a single soul inhabiting two bodies. – Aristotle",
-        "The best thing to hold onto in life is each other. – Audrey Hepburn",
-        "I have found the one whom my soul loves. – Song of Solomon 3:4"
+        "So glad I get to do life with you.",
+        "My favorite place is right next to you.",
+        "Here's to all the memories we've yet to make.",
+        "You make the ordinary moments feel extraordinary.",
+        "Every day with you is a gift.",
+        "Thinking of you.",
+        "I'm so lucky you're mine.",
+        "Ours is my favorite story."
     ];
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -913,7 +915,7 @@
                     <div class="text-center">
                         <div class="text-3xl mb-3">💌</div>
                         <h3 class="font-serif italic text-lg text-gradient mb-2">${note.title || 'Love Note'}</h3>
-                        <p class="font-script text-sm text-gray-700 italic leading-relaxed mb-3">${note.text}</p>
+                        <p class="font-script text-sm text-amber-800 italic leading-relaxed mb-3">${note.text}</p>
                         <div class="flex gap-2 justify-center">
                             <button class="edit-love-note-btn text-xs px-2 py-1 bg-amber-100 text-amber-700 rounded hover:bg-amber-200 transition-colors" data-index="${index}">Edit</button>
                             <button class="delete-love-note-btn text-xs px-2 py-1 bg-red-100 text-red-700 rounded hover:bg-red-200 transition-colors" data-index="${index}">Delete</button>
@@ -1009,7 +1011,7 @@
                 // Create a new memory with the voice message
                 const voiceMemory = {
                     photoUrl: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDYwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfMF8xKSIvPgo8Y2lyY2xlIGN4PSIzMDAiIGN5PSIyMDAiIHI9IjgwIiBmaWxsPSIjRkZGRkZGIiBmaWxsLW9wYWNpdHk9IjAuOSIvPgo8cGF0aCBkPSJNMjQwIDE2MEwyNDAgMjQwTDI4MCAyMDBMMjQwIDE2MFoiIGZpbGw9IiM2MzY2RjEiLz4KPHA+YXRoIGQ9Ik0zNjAgMTYwTDM2MCAyNDBMMzIwIDIwMEwzNjAgMTYwWiIgZmlsbD0iIzYzNjZGMiIvPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzBfMSIgeDE9IjAiIHkxPSIwIiB4Mj0iNjAwIiB5Mj0iNDAwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiNBMUJDRkYiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjQzJEMkZGIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+',
-                    caption: 'A whispered message from my heart to yours, Taso.',
+                    caption: 'A message I recorded for you, Taso.',
                     flower: '🎤',
                     date: new Date().toISOString().split('T')[0],
                     isVideo: false,
@@ -1029,8 +1031,8 @@
         // Export functionality
         const exportMemories = () => {
             const exportData = {
-                title: "For My Eternal Love - Taso Tsiklauri",
-                subtitle: "A Whispering Garden of Our Souls",
+                title: "For Taso",
+                subtitle: "Our Story",
                 exportDate: new Date().toISOString(),
                 memories: allMemories.map((memory, index) => ({
                     id: index + 1,
@@ -1342,8 +1344,8 @@
                 <div class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-white font-light text-sm sm:text-base">${index + 1}</div>
                 <div class="flex-grow glass-card p-3 sm:p-4 rounded-lg italic organic-border glow-soft">
                     <div class="cursor-pointer timeline-btn" data-index="${originalIndex}" role="button" aria-label="View reverie ${index + 1}">
-                        <p class="font-script text-base sm:text-lg text-gray-800 leading-relaxed">${memory.caption}</p>
-                        <p class="text-xs text-gray-500 mt-1 font-light">${dateStr}</p>
+                        <p class="font-script text-base sm:text-lg text-amber-900 leading-relaxed">${memory.caption}</p>
+                        <p class="text-xs text-amber-700 mt-1 font-light">${dateStr}</p>
                     </div>
                     <div class="flex gap-2 mt-2">
                         <button class="edit-memory-btn text-xs px-2 py-1 bg-amber-100 text-amber-700 rounded hover:bg-amber-200 transition-colors flex items-center justify-center" data-index="${originalIndex}">Edit</button>
