@@ -96,11 +96,11 @@
 
         /* Refined glassmorphism */
         .glass-ultra {
-            background: rgba(255, 255, 255, 0.08);
+            background: rgba(139, 69, 19, 0.15);
             backdrop-filter: blur(16px);
             border-radius: 20px;
-            border: 1px solid rgba(239, 68, 68, 0.2);
-            box-shadow: 0 3px 20px rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(160, 82, 45, 0.3);
+            box-shadow: 0 3px 20px rgba(139, 69, 19, 0.2);
         }
 
         .glass-card {
@@ -134,11 +134,11 @@
         .btn-ethereal {
             position: relative;
             overflow: hidden;
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(239, 68, 68, 0.1));
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: linear-gradient(135deg, rgba(139, 69, 19, 0.3), rgba(160, 82, 45, 0.2));
+            border: 1px solid rgba(205, 133, 63, 0.4);
             backdrop-filter: blur(8px);
             transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
-            box-shadow: 0 4px 16px rgba(239, 68, 68, 0.1);
+            box-shadow: 0 4px 16px rgba(139, 69, 19, 0.2);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -150,8 +150,8 @@
 
         .btn-ethereal:hover {
             transform: translateY(-1px) scale(1.01);
-            box-shadow: 0 10px 28px rgba(239, 68, 68, 0.15);
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(239, 68, 68, 0.2));
+            box-shadow: 0 10px 28px rgba(139, 69, 19, 0.3);
+            background: linear-gradient(135deg, rgba(160, 82, 45, 0.4), rgba(205, 133, 63, 0.3));
         }
 
         /* Flower effects with hover preview */
@@ -215,6 +215,23 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Wood-like red background for main title */
+        .title-wood-bg {
+            background: linear-gradient(135deg, #8B4513, #A0522D, #CD853F, #DEB887);
+            background-size: 200% 200%;
+            animation: woodGrain 8s ease-in-out infinite;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+            filter: drop-shadow(0 4px 8px rgba(139, 69, 19, 0.4));
+        }
+
+        @keyframes woodGrain {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
         }
 
         /* Quote rotator */
@@ -462,10 +479,10 @@
         <section id="home" class="min-h-screen flex flex-col items-center justify-center text-center p-4 sm:p-6 transition-all duration-700 ease-in-out">
             <div class="glass-ultra p-8 sm:p-12 rounded-2xl organic-border max-w-md sm:max-w-xl md:max-w-2xl mx-auto transform hover:scale-[1.015] transition-all duration-500 fade-in glow-soft">
                 <div class="text-4xl sm:text-5xl mb-4 animate-pulse opacity-80">✨</div>
-                <h1 class="font-serif italic text-3xl sm:text-5xl md:text-6xl text-gradient mb-4 leading-tight">For Taso</h1>
-                <p class="font-script text-lg sm:text-xl md:text-2xl text-amber-800 mb-2 italic">Our Story So Far</p>
-                <p class="text-amber-700 text-sm sm:text-base md:text-lg mb-6 opacity-90 font-light">A collection of our memories, big and small. A dedication to the life we're building together.</p>
-                <button id="enter-garden" class="btn-ethereal text-amber-900 font-medium py-3 px-8 rounded-full text-base sm:text-lg relative overflow-hidden" aria-label="Enter the memory gallery">
+                <h1 class="font-serif italic text-3xl sm:text-5xl md:text-6xl title-wood-bg mb-4 leading-tight">For Taso</h1>
+                <p class="font-script text-lg sm:text-xl md:text-2xl text-white mb-2 italic drop-shadow-lg">Our Story So Far</p>
+                <p class="text-white text-sm sm:text-base md:text-lg mb-6 opacity-95 font-light drop-shadow-md">A collection of our memories, big and small. A dedication to the life we're building together.</p>
+                <button id="enter-garden" class="btn-ethereal text-white font-medium py-3 px-8 rounded-full text-base sm:text-lg relative overflow-hidden drop-shadow-lg" aria-label="Enter the memory gallery">
                     <span class="relative z-10">Enter</span>
                 </button>
             </div>
