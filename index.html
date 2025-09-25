@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Poetry & Wellness</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1><i class="fas fa-feather-alt"></i> Daily Poetry & Wellness</h1>
+            <p>10 minutes of creativity, 7 minutes of movement, endless inspiration</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav-tabs">
+            <button class="nav-tab active" data-tab="poetry">
+                <i class="fas fa-pen-fancy"></i> Poetry Writing
+            </button>
+            <button class="nav-tab" data-tab="workout">
+                <i class="fas fa-dumbbell"></i> 7-Minute Workout
+            </button>
+            <button class="nav-tab" data-tab="chat">
+                <i class="fas fa-robot"></i> AI Chat
+            </button>
+        </nav>
+
+        <!-- Poetry Section -->
+        <section id="poetry" class="tab-content active">
+            <div class="poetry-intro">
+                <h2>Your Daily Poetry Journey</h2>
+                <p>Write 5 different types of poems, 2 minutes each. Let your creativity flow!</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="poetry-progress"></div>
+                </div>
+                <p class="progress-text">Complete 0/5 poems</p>
+            </div>
+
+            <div class="poem-types">
+                <!-- Sonnet -->
+                <div class="poem-card" data-type="sonnet">
+                    <div class="poem-header">
+                        <h3><i class="fas fa-crown"></i> Sonnet</h3>
+                        <div class="timer" id="sonnet-timer">2:00</div>
+                    </div>
+                    <div class="poem-structure">
+                        <p><strong>Structure:</strong> 14 lines, ABAB CDCD EFEF GG rhyme scheme</p>
+                        <p><strong>Meter:</strong> Iambic pentameter (10 syllables per line)</p>
+                    </div>
+                    <textarea 
+                        class="poem-textarea" 
+                        id="sonnet-text" 
+                        placeholder="Write your sonnet here... (14 lines)"
+                        rows="14"
+                    ></textarea>
+                    <div class="poem-actions">
+                        <button class="start-timer-btn" data-poem="sonnet">Start Timer</button>
+                        <button class="save-poem-btn" data-poem="sonnet">Save Poem</button>
+                    </div>
+                </div>
+
+                <!-- Haiku -->
+                <div class="poem-card" data-type="haiku">
+                    <div class="poem-header">
+                        <h3><i class="fas fa-leaf"></i> Haiku</h3>
+                        <div class="timer" id="haiku-timer">2:00</div>
+                    </div>
+                    <div class="poem-structure">
+                        <p><strong>Structure:</strong> 3 lines, 5-7-5 syllable pattern</p>
+                        <p><strong>Theme:</strong> Nature, seasons, or a moment in time</p>
+                    </div>
+                    <textarea 
+                        class="poem-textarea" 
+                        id="haiku-text" 
+                        placeholder="Line 1 (5 syllables)&#10;Line 2 (7 syllables)&#10;Line 3 (5 syllables)"
+                        rows="3"
+                    ></textarea>
+                    <div class="poem-actions">
+                        <button class="start-timer-btn" data-poem="haiku">Start Timer</button>
+                        <button class="save-poem-btn" data-poem="haiku">Save Poem</button>
+                    </div>
+                </div>
+
+                <!-- Limerick -->
+                <div class="poem-card" data-type="limerick">
+                    <div class="poem-header">
+                        <h3><i class="fas fa-smile"></i> Limerick</h3>
+                        <div class="timer" id="limerick-timer">2:00</div>
+                    </div>
+                    <div class="poem-structure">
+                        <p><strong>Structure:</strong> 5 lines, AABBA rhyme scheme</p>
+                        <p><strong>Meter:</strong> Lines 1,2,5: 8-9 syllables; Lines 3,4: 5-6 syllables</p>
+                    </div>
+                    <textarea 
+                        class="poem-textarea" 
+                        id="limerick-text" 
+                        placeholder="There once was a [person/thing] from [place]&#10;Who [action/description]&#10;They [action]&#10;And [action]&#10;So [conclusion]"
+                        rows="5"
+                    ></textarea>
+                    <div class="poem-actions">
+                        <button class="start-timer-btn" data-poem="limerick">Start Timer</button>
+                        <button class="save-poem-btn" data-poem="limerick">Save Poem</button>
+                    </div>
+                </div>
+
+                <!-- Acrostic -->
+                <div class="poem-card" data-type="acrostic">
+                    <div class="poem-header">
+                        <h3><i class="fas fa-spell-check"></i> Acrostic</h3>
+                        <div class="timer" id="acrostic-timer">2:00</div>
+                    </div>
+                    <div class="poem-structure">
+                        <p><strong>Structure:</strong> First letter of each line spells a word</p>
+                        <p><strong>Theme:</strong> Choose a word (your name, a feeling, an object)</p>
+                    </div>
+                    <textarea 
+                        class="poem-textarea" 
+                        id="acrostic-text" 
+                        placeholder="Each line starts with a letter that spells your chosen word..."
+                        rows="6"
+                    ></textarea>
+                    <div class="poem-actions">
+                        <button class="start-timer-btn" data-poem="acrostic">Start Timer</button>
+                        <button class="save-poem-btn" data-poem="acrostic">Save Poem</button>
+                    </div>
+                </div>
+
+                <!-- Free Verse -->
+                <div class="poem-card" data-type="freeverse">
+                    <div class="poem-header">
+                        <h3><i class="fas fa-wind"></i> Free Verse</h3>
+                        <div class="timer" id="freeverse-timer">2:00</div>
+                    </div>
+                    <div class="poem-structure">
+                        <p><strong>Structure:</strong> No rules! Express yourself freely</p>
+                        <p><strong>Style:</strong> Use line breaks, rhythm, and imagery as you wish</p>
+                    </div>
+                    <textarea 
+                        class="poem-textarea" 
+                        id="freeverse-text" 
+                        placeholder="Let your thoughts flow freely...&#10;No rules, no constraints...&#10;Just pure expression..."
+                        rows="8"
+                    ></textarea>
+                    <div class="poem-actions">
+                        <button class="start-timer-btn" data-poem="freeverse">Start Timer</button>
+                        <button class="save-poem-btn" data-poem="freeverse">Save Poem</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Saved Poems -->
+            <div class="saved-poems">
+                <h3><i class="fas fa-bookmark"></i> Your Saved Poems</h3>
+                <div id="saved-poems-list"></div>
+            </div>
+        </section>
+
+        <!-- Workout Section -->
+        <section id="workout" class="tab-content">
+            <div class="workout-intro">
+                <h2>7-Minute Workout</h2>
+                <p>High-intensity circuit training. Each exercise for 30 seconds, 10 seconds rest between exercises.</p>
+                <div class="workout-controls">
+                    <button id="start-workout" class="workout-btn">Start Workout</button>
+                    <button id="pause-workout" class="workout-btn" disabled>Pause</button>
+                    <button id="reset-workout" class="workout-btn">Reset</button>
+                </div>
+                <div class="workout-timer">
+                    <div class="timer-display" id="workout-timer">7:00</div>
+                    <div class="current-exercise" id="current-exercise">Ready to start!</div>
+                </div>
+            </div>
+
+            <div class="exercises-grid">
+                <div class="exercise-card" data-exercise="0">
+                    <h4>Jumping Jacks</h4>
+                    <p>30 seconds</p>
+                </div>
+                <div class="exercise-card" data-exercise="1">
+                    <h4>Wall Sit</h4>
+                    <p>30 seconds</p>
+                </div>
+                <div class="exercise-card" data-exercise="2">
+                    <h4>Push-ups</h4>
+                    <p>30 seconds</p>
+                </div>
+                <div class="exercise-card" data-exercise="3">
+                    <h4>Abdominal Crunches</h4>
+                    <p>30 seconds</p>
+                </div>
+                <div class="exercise-card" data-exercise="4">
+                    <h4>Step-ups</h4>
+                    <p>30 seconds</p>
+                </div>
+                <div class="exercise-card" data-exercise="5">
+                    <h4>Squats</h4>
+                    <p>30 seconds</p>
+                </div>
+                <div class="exercise-card" data-exercise="6">
+                    <h4>Tricep Dips</h4>
+                    <p>30 seconds</p>
+                </div>
+                <div class="exercise-card" data-exercise="7">
+                    <h4>Plank</h4>
+                    <p>30 seconds</p>
+                </div>
+                <div class="exercise-card" data-exercise="8">
+                    <h4>High Knees</h4>
+                    <p>30 seconds</p>
+                </div>
+                <div class="exercise-card" data-exercise="9">
+                    <h4>Lunges</h4>
+                    <p>30 seconds</p>
+                </div>
+                <div class="exercise-card" data-exercise="10">
+                    <h4>Push-up & Rotation</h4>
+                    <p>30 seconds</p>
+                </div>
+                <div class="exercise-card" data-exercise="11">
+                    <h4>Side Plank</h4>
+                    <p>30 seconds</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chat Section -->
+        <section id="chat" class="tab-content">
+            <div class="chat-intro">
+                <h2>AI Poetry Assistant</h2>
+                <p>Get inspiration, feedback, or help with your poems using OpenAI's GPT.</p>
+                <a href="https://chat.openai.com" target="_blank" class="chat-link">
+                    <i class="fas fa-external-link-alt"></i> Open ChatGPT
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
