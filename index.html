@@ -17,7 +17,7 @@
             font-family: 'Inter', sans-serif;
             overflow-x: hidden;
             margin: 0;
-            background: linear-gradient(-45deg, #FEF2F2, #FEE2E2, #FECACA, #FCA5A5, #F87171, #FCA5A5, #FECACA, #FEE2E2, #FEF2F2);
+            background: linear-gradient(-45deg, #FDF6F0, #F9F1E6, #F4E4C7, #E8D5B7, #D4C4A8, #E8D5B7, #F4E4C7, #F9F1E6, #FDF6F0);
             background-size: 800% 800%;
             animation: etherealShift 35s ease infinite;
         }
@@ -37,12 +37,12 @@
         }
 
         .glow-soft {
-            box-shadow: 0 0 15px rgba(239, 68, 68, 0.3);
+            box-shadow: 0 0 15px rgba(180, 120, 80, 0.2);
             transition: box-shadow 0.4s;
         }
 
         .glow-soft:hover {
-            box-shadow: 0 0 25px rgba(239, 68, 68, 0.5);
+            box-shadow: 0 0 25px rgba(180, 120, 80, 0.3);
         }
 
         /* Micro-animations and cursor */
@@ -56,14 +56,14 @@
         }
 
         body {
-            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="rgba(217,119,6,0.5)" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>'), auto;
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="rgba(180,120,80,0.4)" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>'), auto;
         }
 
         /* Refined light orbs with organic movement */
         .light-orb {
             position: absolute;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(255,255,255,0.35), rgba(217,119,6,0.1), transparent);
+            background: radial-gradient(circle, rgba(255,255,255,0.25), rgba(180,120,80,0.08), transparent);
             animation: driftOrganic 14s ease-in-out infinite;
             pointer-events: none;
             z-index: 1;
@@ -80,7 +80,7 @@
         /* Ethereal particles */
         .ethereal-particle {
             position: absolute;
-            background: radial-gradient(circle, rgba(255,255,255,0.6), rgba(239,68,68,0.25));
+            background: radial-gradient(circle, rgba(255,255,255,0.5), rgba(180,120,80,0.15));
             border-radius: 50%;
             animation: float 18s linear infinite;
             pointer-events: none;
@@ -96,19 +96,19 @@
 
         /* Refined glassmorphism */
         .glass-ultra {
-            background: rgba(139, 69, 19, 0.15);
+            background: rgba(180, 120, 80, 0.12);
             backdrop-filter: blur(16px);
             border-radius: 20px;
-            border: 1px solid rgba(160, 82, 45, 0.3);
-            box-shadow: 0 3px 20px rgba(139, 69, 19, 0.2);
+            border: 1px solid rgba(200, 140, 100, 0.25);
+            box-shadow: 0 3px 20px rgba(180, 120, 80, 0.15);
         }
 
         .glass-card {
-            background: rgba(255, 255, 255, 0.14);
+            background: rgba(255, 255, 255, 0.12);
             backdrop-filter: blur(12px);
             border-radius: 14px;
-            border: 1px solid rgba(239, 68, 68, 0.25);
-            box-shadow: 0 8px 32px rgba(239, 68, 68, 0.15);
+            border: 1px solid rgba(180, 120, 80, 0.2);
+            box-shadow: 0 8px 32px rgba(180, 120, 80, 0.1);
         }
 
         /* Animations */
@@ -134,11 +134,11 @@
         .btn-ethereal {
             position: relative;
             overflow: hidden;
-            background: linear-gradient(135deg, rgba(139, 69, 19, 0.3), rgba(160, 82, 45, 0.2));
-            border: 1px solid rgba(205, 133, 63, 0.4);
+            background: linear-gradient(135deg, rgba(180, 120, 80, 0.25), rgba(200, 140, 100, 0.15));
+            border: 1px solid rgba(220, 160, 120, 0.3);
             backdrop-filter: blur(8px);
             transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
-            box-shadow: 0 4px 16px rgba(139, 69, 19, 0.2);
+            box-shadow: 0 4px 16px rgba(180, 120, 80, 0.15);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -150,8 +150,8 @@
 
         .btn-ethereal:hover {
             transform: translateY(-1px) scale(1.01);
-            box-shadow: 0 10px 28px rgba(139, 69, 19, 0.3);
-            background: linear-gradient(135deg, rgba(160, 82, 45, 0.4), rgba(205, 133, 63, 0.3));
+            box-shadow: 0 10px 28px rgba(180, 120, 80, 0.2);
+            background: linear-gradient(135deg, rgba(200, 140, 100, 0.35), rgba(220, 160, 120, 0.25));
         }
 
         /* Flower effects with hover preview */
@@ -187,7 +187,7 @@
 
         /* Text gradients */
         .text-gradient {
-            background: linear-gradient(135deg, #DC2626, #EF4444, #F87171);
+            background: linear-gradient(135deg, #B47850, #C89664, #D4A574);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -196,14 +196,14 @@
 
         /* Wood-like red background for main title */
         .title-wood-bg {
-            background: linear-gradient(135deg, #8B4513, #A0522D, #CD853F, #DEB887);
+            background: linear-gradient(135deg, #B47850, #C89664, #D4A574, #E6C4A0);
             background-size: 200% 200%;
             animation: woodGrain 8s ease-in-out infinite;
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-            filter: drop-shadow(0 4px 8px rgba(139, 69, 19, 0.4));
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+            filter: drop-shadow(0 4px 8px rgba(180, 120, 80, 0.3));
         }
 
         @keyframes woodGrain {
@@ -439,15 +439,15 @@
 
     <!-- Navigation Bar -->
     <nav class="fixed top-0 left-0 right-0 z-20 glass-ultra p-4 flex justify-center gap-4 sm:gap-6">
-        <button id="nav-home" class="btn-ethereal text-amber-900 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Return to home">Home</button>
-        <button id="nav-garden" class="btn-ethereal text-amber-900 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="View gallery">Gallery</button>
-        <button id="nav-timeline" class="btn-ethereal text-amber-900 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="View timeline">Timeline</button>
-        <button id="nav-love-notes" class="btn-ethereal text-amber-900 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="View love notes">💌 Notes</button>
-        <button id="nav-add-memory" class="btn-ethereal text-amber-900 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Add memory">Add Memory</button>
-        <button id="voice-recorder-btn" class="btn-ethereal text-amber-900 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Record voice message">🎤 Record</button>
-        <button id="voice-settings-btn" class="btn-ethereal text-amber-900 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Open voice settings">⚙️ Settings</button>
-        <button id="export-btn" class="btn-ethereal text-amber-900 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Export memories">📄 Export</button>
-        <button id="toggle-audio" class="btn-ethereal text-amber-900 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Toggle background audio">♫ Play/Pause</button>
+        <button id="nav-home" class="btn-ethereal text-amber-800 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Return to home">Home</button>
+        <button id="nav-garden" class="btn-ethereal text-amber-800 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="View gallery">Gallery</button>
+        <button id="nav-timeline" class="btn-ethereal text-amber-800 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="View timeline">Timeline</button>
+        <button id="nav-love-notes" class="btn-ethereal text-amber-800 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="View love notes">💌 Notes</button>
+        <button id="nav-add-memory" class="btn-ethereal text-amber-800 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Add memory">Add Memory</button>
+        <button id="voice-recorder-btn" class="btn-ethereal text-amber-800 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Record voice message">🎤 Record</button>
+        <button id="voice-settings-btn" class="btn-ethereal text-amber-800 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Open voice settings">⚙️ Settings</button>
+        <button id="export-btn" class="btn-ethereal text-amber-800 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Export memories">📄 Export</button>
+        <button id="toggle-audio" class="btn-ethereal text-amber-800 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Toggle background audio">♫ Play/Pause</button>
     </nav>
 
     <!-- Main Content Wrapper -->
@@ -494,7 +494,7 @@
             <h2 class="font-serif italic text-2xl sm:text-3xl md:text-4xl text-gradient text-center mb-8 leading-tight">Love Notes</h2>
             <div class="text-center glass-card p-6 sm:p-8 rounded-xl max-w-md sm:max-w-lg md:max-w-2xl mx-auto slide-up organic-border glow-soft mb-8">
                 <p class="font-script text-lg sm:text-xl text-amber-800 mb-6 italic">Write a note about how you feel about each other</p>
-                <button id="add-love-note-btn" class="btn-ethereal text-amber-900 font-medium py-3 px-8 rounded-full text-base sm:text-lg">Write a Love Note 💌</button>
+                <button id="add-love-note-btn" class="btn-ethereal text-amber-800 font-medium py-3 px-8 rounded-full text-base sm:text-lg">Write a Love Note 💌</button>
             </div>
             <div id="love-notes-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
                 <!-- Love notes will be populated here -->
@@ -505,14 +505,14 @@
         <section id="add-memory" class="hidden py-12 px-4 sm:px-8 md:px-12">
             <h2 class="font-serif italic text-2xl sm:text-3xl md:text-4xl text-gradient text-center mb-8 leading-tight">Add a New Memory</h2>
             <form id="memory-form" class="glass-card p-6 sm:p-8 rounded-xl max-w-md sm:max-w-lg mx-auto slide-up organic-border glow-soft">
-                <input type="text" id="new-caption" placeholder="What do you remember about this moment?" class="w-full mb-4 p-3 rounded border border-amber-300/50 font-script italic text-amber-900 bg-white/80">
+                <input type="text" id="new-caption" placeholder="What do you remember about this moment?" class="w-full mb-4 p-3 rounded border border-amber-200/60 font-script italic text-amber-800 bg-white/80">
                 
                 <!-- File Upload Section -->
                 <div class="mb-4">
                     <label class="block text-sm font-medium text-amber-800 mb-2">Upload Photo or Video</label>
                     <div class="relative">
                         <input type="file" id="new-file" accept="image/*,video/*" class="hidden">
-                        <button type="button" id="file-browse-btn" class="w-full p-3 rounded border border-amber-300/50 text-amber-900 bg-white/80 backdrop-blur-sm hover:bg-white/90 transition-all duration-200 flex items-center justify-center gap-2">
+                        <button type="button" id="file-browse-btn" class="w-full p-3 rounded border border-amber-200/60 text-amber-800 bg-white/80 backdrop-blur-sm hover:bg-white/90 transition-all duration-200 flex items-center justify-center gap-2">
                             <span id="file-icon">📷</span>
                             <span id="file-text">Choose from Gallery</span>
                         </button>
@@ -526,9 +526,9 @@
                     </div>
                 </div>
                 
-                <input type="text" id="new-flower" placeholder="Add an emoji or symbol..." class="w-full mb-4 p-3 rounded border border-amber-300/50 text-amber-900 bg-white/80">
-                <input type="date" id="new-date" class="w-full mb-4 p-3 rounded border border-amber-300/50 text-amber-900 bg-white/80">
-                <button type="submit" class="btn-ethereal w-full text-amber-900 font-medium py-3 rounded-full">Save Memory</button>
+                <input type="text" id="new-flower" placeholder="Add an emoji or symbol..." class="w-full mb-4 p-3 rounded border border-amber-200/60 text-amber-800 bg-white/80">
+                <input type="date" id="new-date" class="w-full mb-4 p-3 rounded border border-amber-200/60 text-amber-800 bg-white/80">
+                <button type="submit" class="btn-ethereal w-full text-amber-800 font-medium py-3 rounded-full">Save Memory</button>
             </form>
         </section>
     </div>
@@ -548,8 +548,8 @@
                 </button>
                 <div id="lightbox-media" class="w-full h-auto object-cover rounded-xl mb-4 max-h-[60vh] sm:max-h-[70vh] shadow-lg"></div>
                 <div class="text-center">
-                    <p id="lightbox-caption" class="hidden text-amber-900 text-base sm:text-lg md:text-xl font-script leading-relaxed mb-2 italic"></p>
-                    <p id="lightbox-date" class="text-amber-700 text-sm mb-4 font-light"></p>
+                    <p id="lightbox-caption" class="hidden text-amber-800 text-base sm:text-lg md:text-xl font-script leading-relaxed mb-2 italic"></p>
+                    <p id="lightbox-date" class="text-amber-600 text-sm mb-4 font-light"></p>
                     <div class="text-lg sm:text-xl opacity-55">◇</div>
                 </div>
             </div>
@@ -564,7 +564,7 @@
                     ✕
                 </button>
                 <h3 class="font-serif italic text-2xl text-gradient mb-4">A Letter for You</h3>
-                <p class="font-script text-lg text-amber-900 italic leading-relaxed">My dearest Taso,<br>I wanted to create a special place for us—a quiet spot to keep our memories and watch our story grow. I hope you like it. Every moment with you is my favorite.<br>With all my love,</p>
+                <p class="font-script text-lg text-amber-800 italic leading-relaxed">My dearest Taso,<br>I wanted to create a special place for us—a quiet spot to keep our memories and watch our story grow. I hope you like it. Every moment with you is my favorite.<br>With all my love,</p>
                 <div class="text-center mt-4 text-xl opacity-60">[Your Name Here]</div>
             </div>
         </div>
@@ -595,10 +595,10 @@
                 </button>
                 <h3 class="font-serif italic text-xl text-gradient mb-4">Record a Message</h3>
                 <div class="text-center">
-                    <button id="record-btn" class="btn-ethereal text-amber-900 font-medium py-3 px-6 rounded-full text-base mb-4">
+                    <button id="record-btn" class="btn-ethereal text-amber-800 font-medium py-3 px-6 rounded-full text-base mb-4">
                         🎤 Start Recording
                     </button>
-                    <div id="recording-status" class="text-sm text-amber-700 mb-4 hidden">
+                    <div id="recording-status" class="text-sm text-amber-600 mb-4 hidden">
                         <div class="flex items-center justify-center gap-2">
                             <div class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
                             Recording... Click to stop
@@ -606,8 +606,8 @@
                     </div>
                     <audio id="recorded-audio" controls class="w-full mb-4 hidden"></audio>
                     <div class="flex gap-2 justify-center">
-                        <button id="save-recording" class="btn-ethereal text-amber-900 font-medium py-2 px-4 rounded-full text-sm hidden">Save Message</button>
-                        <button id="play-recording" class="btn-ethereal text-amber-900 font-medium py-2 px-4 rounded-full text-sm hidden">Play</button>
+                        <button id="save-recording" class="btn-ethereal text-amber-800 font-medium py-2 px-4 rounded-full text-sm hidden">Save Message</button>
+                        <button id="play-recording" class="btn-ethereal text-amber-800 font-medium py-2 px-4 rounded-full text-sm hidden">Play</button>
                     </div>
                 </div>
             </div>
@@ -723,9 +723,9 @@
                 </button>
                 <h3 class="font-serif italic text-xl text-gradient mb-4">Write a Love Note</h3>
                 <form id="love-note-form">
-                    <textarea id="love-note-text" placeholder="Write your feelings here..." class="w-full mb-4 p-3 rounded border border-amber-300/50 font-script italic text-amber-900 bg-white/80 h-32 resize-none"></textarea>
-                    <input type="text" id="love-note-title" placeholder="Title (optional)" class="w-full mb-4 p-3 rounded border border-amber-300/50 font-script italic text-amber-900 bg-white/80">
-                    <button type="submit" class="btn-ethereal w-full text-amber-900 font-medium py-3 rounded-full">Save Love Note 💌</button>
+                    <textarea id="love-note-text" placeholder="Write your feelings here..." class="w-full mb-4 p-3 rounded border border-amber-200/60 font-script italic text-amber-800 bg-white/80 h-32 resize-none"></textarea>
+                    <input type="text" id="love-note-title" placeholder="Title (optional)" class="w-full mb-4 p-3 rounded border border-amber-200/60 font-script italic text-amber-800 bg-white/80">
+                    <button type="submit" class="btn-ethereal w-full text-amber-800 font-medium py-3 rounded-full">Save Love Note 💌</button>
                 </form>
             </div>
         </div>
@@ -740,11 +740,11 @@
                 </button>
                 <h3 class="font-serif italic text-xl text-gradient mb-4">Export Our Story</h3>
                 <div class="text-center space-y-4">
-                    <p class="text-amber-700 mb-6">Save a copy of our memories.</p>
-                    <button id="export-json" class="btn-ethereal text-amber-900 font-medium py-3 px-6 rounded-full text-base w-full">
+                    <p class="text-amber-600 mb-6">Save a copy of our memories.</p>
+                    <button id="export-json" class="btn-ethereal text-amber-800 font-medium py-3 px-6 rounded-full text-base w-full">
                         📄 Export as Data File (JSON)
                     </button>
-                    <button id="export-text" class="btn-ethereal text-amber-900 font-medium py-3 px-6 rounded-full text-base w-full">
+                    <button id="export-text" class="btn-ethereal text-amber-800 font-medium py-3 px-6 rounded-full text-base w-full">
                         📝 Export as Plain Text (.txt)
                     </button>
                     <p class="text-xs text-gray-500 mt-4">
@@ -911,7 +911,7 @@
                         <h3 class="font-serif italic text-lg text-gradient mb-2">${note.title || 'Love Note'}</h3>
                         <p class="font-script text-sm text-amber-800 italic leading-relaxed mb-3">${note.text}</p>
                         <div class="flex gap-2 justify-center">
-                            <button class="edit-love-note-btn text-xs px-2 py-1 bg-amber-100 text-amber-700 rounded hover:bg-amber-200 transition-colors" data-index="${index}">Edit</button>
+                            <button class="edit-love-note-btn text-xs px-2 py-1 bg-amber-50 text-amber-500 rounded hover:bg-amber-100 transition-colors" data-index="${index}">Edit</button>
                             <button class="delete-love-note-btn text-xs px-2 py-1 bg-red-100 text-red-700 rounded hover:bg-red-200 transition-colors" data-index="${index}">Delete</button>
                         </div>
                     </div>
@@ -1342,13 +1342,13 @@
             }) : 'Unknown Date';
             
             timelineItem.innerHTML = `
-                <div class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-white font-light text-sm sm:text-base">${index + 1}</div>
+                <div class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-amber-300 to-amber-400 flex items-center justify-center text-white font-light text-sm sm:text-base">${index + 1}</div>
                 <div class="flex-grow glass-card p-3 sm:p-4 rounded-lg italic organic-border glow-soft">
                     <div class="cursor-pointer timeline-btn" data-index="${originalIndex}" role="button" aria-label="View reverie ${index + 1}">
-                        <p class="text-xs text-amber-700 mt-1 font-light">${dateStr}</p>
+                        <p class="text-xs text-amber-600 mt-1 font-light">${dateStr}</p>
                     </div>
                     <div class="flex gap-2 mt-2">
-                        <button class="edit-memory-btn text-xs px-2 py-1 bg-amber-100 text-amber-700 rounded hover:bg-amber-200 transition-colors flex items-center justify-center" data-index="${originalIndex}">Edit</button>
+                        <button class="edit-memory-btn text-xs px-2 py-1 bg-amber-50 text-amber-500 rounded hover:bg-amber-100 transition-colors flex items-center justify-center" data-index="${originalIndex}">Edit</button>
                         <button class="delete-memory-btn text-xs px-2 py-1 bg-red-100 text-red-700 rounded hover:bg-red-200 transition-colors flex items-center justify-center" data-index="${originalIndex}">Delete</button>
                     </div>
                 </div>
