@@ -757,16 +757,16 @@
 
 <script>
     const memories = [
-        { photoUrl: 'Assets/_DSC1205.JPG', caption: 'The light was perfect that evening. I\'ll never forget the way you looked right at this moment.', flower: '🤍', isVideo: false, date: '2024-01-15' },
-        { photoUrl: 'Assets/_DSC1913 copy.jpg', caption: 'That sunset was incredible, but sharing it with you was the best part.', flower: '🌾', isVideo: false, date: '2024-02-20' },
-        { photoUrl: 'Assets/_DSC2149.jpg', caption: 'Just a simple walk, but one of my favorite days with you.', flower: '✦', isVideo: false, date: '2024-03-10' },
-        { photoUrl: 'Assets/_DSC2184 copy.jpg', caption: 'I love how we can be silly together. This picture always makes me smile.', flower: '◊', isVideo: false, date: '2024-04-05' },
-        { photoUrl: 'Assets/att.xOKG4HmHSwEs_egm4cG18fb_0-JcOPvWE3EL--soZWI.JPG', caption: 'Remember how cold it was? So worth it for this view and this moment.', flower: '🌙', isVideo: false, date: '2024-05-12' },
-        { photoUrl: 'Assets/c60b2d44-8c2e-4b89-8db3-92c29c363cd0.JPG', caption: 'Another year together, and I love you more than ever.', flower: '✨', isVideo: false, date: '2024-06-18' },
-        { photoUrl: 'Assets/efbe8129-6156-4d19-809f-137921aaa0ad.jpg', caption: 'The sound of your laugh is my favorite sound in the world.', flower: '☾', isVideo: false, date: '2024-07-25' },
-        { photoUrl: 'Assets/IMG_2826 5.jpg', caption: 'On top of the world with you.', flower: '⋄', isVideo: false, date: '2024-08-30' },
-        { photoUrl: 'Assets/IMG_3905.jpg', caption: 'Little traditions like this mean so much to me.', flower: '❋', isVideo: false, date: '2024-09-14' },
-        { photoUrl: 'Assets/IMG_4710.jpg', caption: 'One of those quiet, perfect moments I\'ll always treasure.', flower: '◦', isVideo: false, date: '2024-10-22' },
+        { photoUrl: 'Assets/_DSC1205.JPG', caption: '', flower: '🤍', isVideo: false, date: '2024-01-15' },
+        { photoUrl: 'Assets/_DSC1913 copy.jpg', caption: '', flower: '🌾', isVideo: false, date: '2024-02-20' },
+        { photoUrl: 'Assets/_DSC2149.jpg', caption: '', flower: '✦', isVideo: false, date: '2024-03-10' },
+        { photoUrl: 'Assets/_DSC2184 copy.jpg', caption: '', flower: '◊', isVideo: false, date: '2024-04-05' },
+        { photoUrl: 'Assets/att.xOKG4HmHSwEs_egm4cG18fb_0-JcOPvWE3EL--soZWI.JPG', caption: '', flower: '🌙', isVideo: false, date: '2024-05-12' },
+        { photoUrl: 'Assets/c60b2d44-8c2e-4b89-8db3-92c29c363cd0.JPG', caption: '', flower: '✨', isVideo: false, date: '2024-06-18' },
+        { photoUrl: 'Assets/efbe8129-6156-4d19-809f-137921aaa0ad.jpg', caption: '', flower: '☾', isVideo: false, date: '2024-07-25' },
+        { photoUrl: 'Assets/IMG_2826 5.jpg', caption: '', flower: '⋄', isVideo: false, date: '2024-08-30' },
+        { photoUrl: 'Assets/IMG_3905.jpg', caption: '', flower: '❋', isVideo: false, date: '2024-09-14' },
+        { photoUrl: 'Assets/IMG_4710.jpg', caption: '', flower: '◦', isVideo: false, date: '2024-10-22' },
     ];
 
     const quotes = [
@@ -1345,7 +1345,6 @@
                 <div class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-white font-light text-sm sm:text-base">${index + 1}</div>
                 <div class="flex-grow glass-card p-3 sm:p-4 rounded-lg italic organic-border glow-soft">
                     <div class="cursor-pointer timeline-btn" data-index="${originalIndex}" role="button" aria-label="View reverie ${index + 1}">
-                        <p class="font-script text-base sm:text-lg text-amber-900 leading-relaxed">${memory.caption}</p>
                         <p class="text-xs text-amber-700 mt-1 font-light">${dateStr}</p>
                     </div>
                     <div class="flex gap-2 mt-2">
