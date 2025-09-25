@@ -1335,17 +1335,11 @@
             timelineItem.className = 'flex items-center gap-3 sm:gap-4 slide-up';
             timelineItem.style.animationDelay = `${index * 0.08}s`;
             
-            const dateStr = memory.date ? new Date(memory.date).toLocaleDateString('en-US', { 
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric' 
-            }) : 'Unknown Date';
-            
             timelineItem.innerHTML = `
                 <div class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-amber-300 to-amber-400 flex items-center justify-center text-white font-light text-sm sm:text-base">${index + 1}</div>
                 <div class="flex-grow glass-card p-3 sm:p-4 rounded-lg italic organic-border glow-soft">
                     <div class="cursor-pointer timeline-btn" data-index="${originalIndex}" role="button" aria-label="View reverie ${index + 1}">
-                        <p class="text-xs text-amber-600 mt-1 font-light">${dateStr}</p>
+                        <img src="${memory.photoUrl}" alt="Memory ${index + 1}" class="w-full h-32 sm:h-40 object-cover rounded-lg">
                     </div>
                     <div class="flex gap-2 mt-2">
                         <button class="edit-memory-btn text-xs px-2 py-1 bg-amber-50 text-amber-500 rounded hover:bg-amber-100 transition-colors flex items-center justify-center" data-index="${originalIndex}">Edit</button>
