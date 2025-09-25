@@ -171,29 +171,6 @@
             background: rgba(255, 255, 255, 0.22);
         }
 
-        .flower-delicate .preview-tooltip {
-            position: absolute;
-            bottom: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            background: rgba(255, 255, 255, 0.18);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            padding: 8px 12px;
-            border-radius: 8px;
-            font-size: 0.75rem;
-            color: #1e293b;
-            white-space: nowrap;
-            opacity: 0;
-            transition: opacity 0.3s, transform 0.3s;
-            pointer-events: none;
-            margin-bottom: 8px;
-        }
-
-        .flower-delicate:hover .preview-tooltip {
-            opacity: 1;
-            transform: translateX(-50%) translateY(-4px);
-        }
 
         /* Parallax */
         .parallax {
@@ -571,7 +548,7 @@
                 </button>
                 <div id="lightbox-media" class="w-full h-auto object-cover rounded-xl mb-4 max-h-[60vh] sm:max-h-[70vh] shadow-lg"></div>
                 <div class="text-center">
-                    <p id="lightbox-caption" class="text-amber-900 text-base sm:text-lg md:text-xl font-script leading-relaxed mb-2 italic"></p>
+                    <p id="lightbox-caption" class="hidden text-amber-900 text-base sm:text-lg md:text-xl font-script leading-relaxed mb-2 italic"></p>
                     <p id="lightbox-date" class="text-amber-700 text-sm mb-4 font-light"></p>
                     <div class="text-lg sm:text-xl opacity-55">◇</div>
                 </div>
@@ -1329,16 +1306,23 @@
 
         // Populate garden
         allMemories.forEach((memory, index) => {
-            const flowerItem = document.createElement('div');
-            flowerItem.className = 'flex items-center justify-center slide-up relative';
-            flowerItem.style.animationDelay = `${index * 0.08}s`;
-            flowerItem.innerHTML = `
-                <button data-index="${index}" class="flower-btn flower-delicate text-3xl sm:text-4xl md:text-5xl transform transition-all duration-400 focus:outline-none focus:ring-2 focus:ring-white/15 rounded-full glow-soft" aria-label="View reverie ${index + 1}">
-                    ${memory.flower}
-                    <span class="preview-tooltip">${memory.caption}</span>
-                </button>
-            `;
-            gardenGrid.appendChild(flowerItem);
+            // Only show items that have actual images (not just icons or SVG placeholders)
+            const hasRealImage = memory.photoUrl && 
+                !memory.photoUrl.startsWith('data:image/svg+xml') && 
+                !memory.isAudio && 
+                !memory.isLoveNote;
+            
+            if (hasRealImage) {
+                const flowerItem = document.createElement('div');
+                flowerItem.className = 'flex items-center justify-center slide-up relative';
+                flowerItem.style.animationDelay = `${index * 0.08}s`;
+                flowerItem.innerHTML = `
+                    <button data-index="${index}" class="flower-btn flower-delicate text-3xl sm:text-4xl md:text-5xl transform transition-all duration-400 focus:outline-none focus:ring-2 focus:ring-white/15 rounded-full glow-soft" aria-label="View reverie ${index + 1}">
+                        ${memory.flower}
+                    </button>
+                `;
+                gardenGrid.appendChild(flowerItem);
+            }
         });
 
         // Sort memories by date for timeline
@@ -1535,7 +1519,8 @@
                 img.className = 'w-full h-auto object-cover rounded-xl';
                 lightboxMedia.appendChild(img);
             }
-            lightboxCaption.textContent = memory.caption;
+            // Caption removed - no more romantic text
+            // lightboxCaption.textContent = memory.caption;
             const dateStr = memory.date ? new Date(memory.date).toLocaleDateString('en-US', { 
                 year: 'numeric', 
                 month: 'long', 
@@ -1548,8 +1533,8 @@
             // Update navigation button states
             updateNavigationButtons();
 
-            // Voice synthesis using saved settings
-            speakWithSettings(memory.caption);
+            // Voice synthesis disabled for images
+            // speakWithSettings(memory.caption);
 
             // Trigger love letter after 3 views
             viewedCount++;
