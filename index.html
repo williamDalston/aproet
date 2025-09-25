@@ -1347,7 +1347,7 @@
                 flowerItem.className = 'flex items-center justify-center slide-up relative';
                 flowerItem.style.animationDelay = `${index * 0.08}s`;
                 flowerItem.innerHTML = `
-                    <button data-index="${index}" class="flower-btn flower-delicate text-3xl sm:text-4xl md:text-5xl transform transition-all duration-400 focus:outline-none focus:ring-2 focus:ring-white/15 rounded-full glow-soft" aria-label="View reverie ${index + 1}">
+                    <button data-index="${index}" class="flower-btn flower-delicate text-3xl sm:text-4xl md:text-5xl transform transition-all duration-400 focus:outline-none focus:ring-2 focus:ring-white/15 rounded-full glow-soft">
                         ${memory.flower}
                     </button>
                 `;
@@ -1368,8 +1368,8 @@
             timelineItem.innerHTML = `
                 <div class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-amber-300 to-amber-400 flex items-center justify-center text-white font-light text-sm sm:text-base">${index + 1}</div>
                 <div class="flex-grow glass-card p-3 sm:p-4 rounded-lg italic organic-border glow-soft">
-                    <div class="cursor-pointer timeline-btn" data-index="${originalIndex}" role="button" aria-label="View reverie ${index + 1}">
-                        <img src="${memory.photoUrl}" alt="Memory ${index + 1}" class="w-full h-32 sm:h-40 object-cover rounded-lg">
+                    <div class="cursor-pointer timeline-btn" data-index="${originalIndex}" role="button">
+                        <img src="${memory.photoUrl}" class="w-full h-32 sm:h-40 object-cover rounded-lg">
                     </div>
                     <div class="flex gap-2 mt-2">
                         <button class="edit-memory-btn text-xs px-2 py-1 bg-amber-50 text-amber-500 rounded hover:bg-amber-100 transition-colors flex items-center justify-center" data-index="${originalIndex}">Edit</button>
@@ -1538,7 +1538,6 @@
             } else {
                 const img = document.createElement('img');
                 img.src = memory.photoUrl;
-                img.alt = memory.caption;
                 img.className = 'w-full h-auto object-cover rounded-xl';
                 lightboxMedia.appendChild(img);
             }
