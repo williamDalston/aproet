@@ -1,245 +1,224 @@
-# TEXT CUSTOMIZATION FILE FOR "FOR MY ETERNAL LOVE - TASO TSIKLAURI"
-# Edit all the text below to personalize your love letter application
-# After editing, save this file and let me know when you're done
+Edit all the text below to personalize your love letter application
+After editing, save this file and let me know when you're done
+===========================================
+MAIN TITLE AND HEADER TEXT
+===========================================
+Main heading on homepage
+MAIN_TITLE: "For Taso"
 
-# ===========================================
-# MAIN TITLE AND HEADER TEXT
-# ===========================================
+Subtitle on homepage
+SUBTITLE: "Our Story So Far"
 
-# Main heading on homepage
-MAIN_TITLE: "For My Eternal Love, Taso Tsiklauri"
+Description text on homepage
+DESCRIPTION: "A collection of our memories, big and small. A dedication to the life we're building together."
 
-# Subtitle on homepage
-SUBTITLE: "A Whispering Garden of Our Souls"
+Enter button text
+ENTER_BUTTON: "Enter"
 
-# Description text on homepage
-DESCRIPTION: "Where whispers of time bloom into forever. A dedication: In your eyes, I found my forever."
-
-# Enter button text
-ENTER_BUTTON: "Awaken the Garden ✧"
-
-# ===========================================
-# NAVIGATION TEXT
-# ===========================================
-
-# Navigation buttons
+===========================================
+NAVIGATION TEXT
+===========================================
+Navigation buttons
 NAV_HOME: "Home"
-NAV_GARDEN: "Garden"
+NAV_GARDEN: "Gallery"
 NAV_TIMELINE: "Timeline"
 NAV_ADD_MEMORY: "Add Memory"
 NAV_RECORD: "🎤 Record"
-NAV_SETTINGS: "🔊 Settings"
+NAV_SETTINGS: "⚙️ Settings"
 NAV_EXPORT: "📄 Export"
 
-# ===========================================
-# GARDEN SECTION TEXT
-# ===========================================
+===========================================
+GARDEN SECTION TEXT
+===========================================
+Garden section title
+GARDEN_TITLE: "Our Gallery"
 
-# Garden section title
-GARDEN_TITLE: "Our Whispering Garden"
+Garden quote
+GARDEN_QUOTE: "A few of my favorite moments with you."
 
-# Garden quote
-GARDEN_QUOTE: "In this garden, our love defies the seasons, eternal as the stars"
+===========================================
+TIMELINE SECTION TEXT
+===========================================
+Timeline section title
+TIMELINE_TITLE: "Our Journey"
 
-# ===========================================
-# TIMELINE SECTION TEXT
-# ===========================================
+===========================================
+ADD MEMORY SECTION TEXT
+===========================================
+Add memory section title
+ADD_MEMORY_TITLE: "Add a New Memory"
 
-# Timeline section title
-TIMELINE_TITLE: "Our Timeless Journey"
-
-# ===========================================
-# ADD MEMORY SECTION TEXT
-# ===========================================
-
-# Add memory section title
-ADD_MEMORY_TITLE: "Plant a New Bloom"
-
-# Form labels and placeholders
-MEMORY_CAPTION_PLACEHOLDER: "Whisper your memory..."
-FILE_BROWSE_LABEL: "Choose Photo or Video"
-FILE_BROWSE_MOBILE: "Browse Gallery"
+Form labels and placeholders
+MEMORY_CAPTION_PLACEHOLDER: "What do you remember about this moment?"
+FILE_BROWSE_LABEL: "Upload Photo or Video"
+FILE_BROWSE_MOBILE: "Choose from Gallery"
 FILE_BROWSE_DESKTOP: "Browse Files"
-FLOWER_PLACEHOLDER: "Choose a symbol (e.g., 🌹)..."
-SUBMIT_BUTTON: "Plant the Memory ✿"
-SUBMIT_BUTTON_EDIT: "Update the Memory"
+FLOWER_PLACEHOLDER: "Add an emoji or symbol..."
+SUBMIT_BUTTON: "Save Memory"
+SUBMIT_BUTTON_EDIT: "Update Memory"
 
-# File preview text
+File preview text
 FILE_SELECTED: "Change File"
 FILE_REMOVE: "✕"
 
-# ===========================================
-# LOVE LETTER MODAL TEXT
-# ===========================================
+===========================================
+LOVE LETTER MODAL TEXT
+===========================================
+Love letter title
+LOVE_LETTER_TITLE: "A Letter for You"
 
-# Love letter title
-LOVE_LETTER_TITLE: "A Secret Letter"
+Love letter content
+LOVE_LETTER_CONTENT: "My dearest Taso,\nI wanted to create a special place for us—a quiet spot to keep our memories and watch our story grow. I hope you like it. Every moment with you is my favorite.\nWith all my love,"
 
-# Love letter content
-LOVE_LETTER_CONTENT: "My dearest Taso Tsiklauri,\nEach bloom in this garden is a testament to our enduring love. As you explore, remember that every memory is but a chapter in our endless story. With all my heart, forever yours."
+Love letter signature
+LOVE_LETTER_SIGNATURE: "[Your Name Here]"
 
-# Love letter signature
-LOVE_LETTER_SIGNATURE: "♡"
+===========================================
+VOICE RECORDER MODAL TEXT
+===========================================
+Voice recorder title
+VOICE_RECORDER_TITLE: "Record a Message"
 
-# ===========================================
-# VOICE RECORDER MODAL TEXT
-# ===========================================
-
-# Voice recorder title
-VOICE_RECORDER_TITLE: "Record a Love Message"
-
-# Voice recorder buttons
+Voice recorder buttons
 VOICE_START_RECORDING: "Start Recording"
 VOICE_STOP_RECORDING: "Stop Recording"
-VOICE_PLAY_BACK: "Play Back"
+VOICE_PLAY_BACK: "Play"
 VOICE_SAVE_MESSAGE: "Save Message"
 
-# Voice recorder status
-VOICE_RECORDING_STATUS: "Recording... Speak your heart"
+Voice recorder status
+VOICE_RECORDING_STATUS: "Recording..."
 VOICE_RECORDING_STOPPED: "Recording stopped"
 
-# ===========================================
-# VOICE SETTINGS MODAL TEXT
-# ===========================================
+===========================================
+VOICE SETTINGS MODAL TEXT
+===========================================
+Voice settings title
+VOICE_SETTINGS_TITLE: "Voice & Audio Settings"
 
-# Voice settings title
-VOICE_SETTINGS_TITLE: "Voice Settings"
-
-# Voice settings labels
-VOICE_SELECT_LABEL: "Choose Your Voice"
+Voice settings labels
+VOICE_SELECT_LABEL: "Text-to-Speech Voice"
 VOICE_SPEED_LABEL: "Speed"
 VOICE_PITCH_LABEL: "Pitch"
 VOICE_VOLUME_LABEL: "Volume"
 
-# Voice settings buttons
-VOICE_TEST_BUTTON: "Test This Voice"
+Voice settings buttons
+VOICE_TEST_BUTTON: "Test Voice"
 VOICE_TEST_PLAYING: "Playing..."
 VOICE_SAVE_SETTINGS: "Save Settings"
-VOICE_RESET: "Reset to Defaults"
+VOICE_RESET: "Reset Defaults"
 
-# Voice settings categories
+Voice settings categories
 VOICE_PREMIUM: "⭐ Premium Voices"
 VOICE_NATURAL: "🎭 Natural Voices"
 VOICE_STANDARD: "🔊 Standard Voices"
 
-# ===========================================
-# EXPORT MODAL TEXT
-# ===========================================
+===========================================
+EXPORT MODAL TEXT
+===========================================
+Export modal title
+EXPORT_TITLE: "Export Our Story"
 
-# Export modal title
-EXPORT_TITLE: "Export Our Love Story"
+Export description
+EXPORT_DESCRIPTION: "Save a copy of our memories."
 
-# Export description
-EXPORT_DESCRIPTION: "Choose how you'd like to preserve our memories"
+Export buttons
+EXPORT_JSON: "Export as Data File (JSON)"
+EXPORT_TEXT: "Export as Plain Text (.txt)"
 
-# Export buttons
-EXPORT_JSON: "Export as JSON (Data Backup)"
-EXPORT_TEXT: "Export as Love Letter (Text)"
-
-# ===========================================
-# FOOTER QUOTES (ROTATING)
-# ===========================================
-
-# Rotating quotes in footer (separate each with a new line)
+===========================================
+FOOTER QUOTES (ROTATING)
+===========================================
+Rotating quotes in footer (separate each with a new line)
 QUOTES:
-"In your eyes, I found my forever"
-"Every moment with you is a treasure"
-"Love is the only thing that multiplies when shared"
-"Together we are infinite"
-"In your arms, I found my home"
-"Love is not about how much you say 'I love you', but how much you prove it"
-"Every love story is beautiful, but ours is my favorite"
-"You are my today and all of my tomorrows"
+"So glad I get to do life with you."
+"My favorite place is right next to you."
+"Here's to all the memories we've yet to make."
+"You make the ordinary moments feel extraordinary."
+"Every day with you is a gift."
+"Thinking of you."
+"I'm so lucky you're mine."
+"Ours is my favorite story."
 
-# ===========================================
-# MEMORY CAPTIONS (DEFAULT MEMORIES)
-# ===========================================
+===========================================
+MEMORY CAPTIONS (DEFAULT MEMORIES)
+===========================================
+These are the default memory captions that appear with your photos
+You can edit these to be more personal or add new ones
+MEMORY_1: "The light was perfect that evening. I'll never forget the way you looked right at this moment."
+MEMORY_2: "That sunset was incredible, but sharing it with you was the best part."
+MEMORY_3: "Just a simple walk, but one of my favorite days with you."
+MEMORY_4: "I love how we can be silly together. This picture always makes me smile."
+MEMORY_5: "Remember how cold it was? So worth it for this view and this moment."
+MEMORY_6: "Another year together, and I love you more than ever."
+MEMORY_7: "The sound of your laugh is my favorite sound in the world."
+MEMORY_8: "On top of the world with you."
+MEMORY_9: "Little traditions like this mean so much to me."
+MEMORY_10: "One of those quiet, perfect moments I'll always treasure."
 
-# These are the default memory captions that appear with your photos
-# You can edit these to be more personal or add new ones
+===========================================
+VOICE MESSAGE TEXT
+===========================================
+Default voice message caption
+VOICE_MESSAGE_CAPTION: "A message I recorded for you, Taso."
 
-MEMORY_1: "In that twilight hush, I heard eternity in your gaze, a home woven from starlight."
-MEMORY_2: "Sunset's golden veil draped our dreams, birthing realities from fleeting light."
-MEMORY_3: "With each shared stride, we trace constellations unseen by mortal eyes."
-MEMORY_4: "Amid our poetic tempests, perfection emerged from harmonious disarray."
-MEMORY_5: "Through tempests of heart and sky, you anchor my wandering soul."
-MEMORY_6: "Another cycle of the sun, yet our vows echo infinitely through time."
-MEMORY_7: "Your melody of joy orchestrates the cosmos into sublime order."
-MEMORY_8: "Atop earthly heights, our union ascends beyond the visible horizon."
-MEMORY_9: "Crafting legends from threads of ritual, binding our essences eternally."
-MEMORY_10: "In quietude, our spirits compose a symphony known only to lovers."
-
-# ===========================================
-# VOICE MESSAGE TEXT
-# ===========================================
-
-# Default voice message caption
-VOICE_MESSAGE_CAPTION: "A whispered message from my heart to yours, Taso."
-
-# ===========================================
-# ACCESSIBILITY TEXT
-# ===========================================
-
-# Screen reader announcements
-SCREEN_READER_ENTER_GARDEN: "Entered the whispering garden"
-SCREEN_READER_MEMORY_ADDED: "New memory planted successfully"
+===========================================
+ACCESSIBILITY TEXT
+===========================================
+Screen reader announcements
+SCREEN_READER_ENTER_GARDEN: "Entered the memory gallery"
+SCREEN_READER_MEMORY_ADDED: "New memory saved successfully"
 SCREEN_READER_MEMORY_UPDATED: "Memory updated successfully"
 SCREEN_READER_MEMORY_DELETED: "Memory deleted successfully"
 SCREEN_READER_FILE_SELECTED: "Selected file: {filename}"
 SCREEN_READER_FILE_REMOVED: "File removed"
 SCREEN_READER_VOICE_SAVED: "Voice message saved successfully"
 
-# Section names for screen readers
+Section names for screen readers
 SCREEN_READER_HOME: "Home page"
-SCREEN_READER_GARDEN: "Garden view"
+SCREEN_READER_GARDEN: "Gallery view"
 SCREEN_READER_TIMELINE: "Timeline view"
 SCREEN_READER_ADD_MEMORY: "Add memory form"
 
-# ===========================================
-# BUTTON LABELS AND ARIA LABELS
-# ===========================================
-
-# Button accessibility labels
-ARIA_ENTER_GARDEN: "Enter the whispering garden"
-ARIA_VIEW_GARDEN: "View garden"
+===========================================
+BUTTON LABELS AND ARIA LABELS
+===========================================
+Button accessibility labels
+ARIA_ENTER_GARDEN: "Enter the memory gallery"
+ARIA_VIEW_GARDEN: "View gallery"
 ARIA_VIEW_TIMELINE: "View timeline"
 ARIA_ADD_MEMORY: "Add memory"
 ARIA_RECORD_VOICE: "Record voice message"
-ARIA_VOICE_SETTINGS: "Voice settings"
+ARIA_VOICE_SETTINGS: "Open voice settings"
 ARIA_EXPORT: "Export memories"
-ARIA_CLOSE_MODAL: "Close modal"
+ARIA_CLOSE_MODAL: "Close window"
 ARIA_PREVIOUS_MEMORY: "Previous memory"
 ARIA_NEXT_MEMORY: "Next memory"
-ARIA_VIEW_MEMORY: "View reverie {number}"
+ARIA_VIEW_MEMORY: "View memory {number}"
 
-# ===========================================
-# EXPORT TEXT CONTENT
-# ===========================================
+===========================================
+EXPORT TEXT CONTENT
+===========================================
+Export file titles
+EXPORT_JSON_TITLE: "For Taso"
+EXPORT_JSON_SUBTITLE: "Our Story"
 
-# Export file titles
-EXPORT_JSON_TITLE: "For My Eternal Love - Taso Tsiklauri"
-EXPORT_JSON_SUBTITLE: "A Whispering Garden of Our Souls"
+===========================================
+ERROR MESSAGES
+===========================================
+Error messages (if any are needed)
+ERROR_MEMORY_REQUIRED: "Please add a caption and a file to save the memory."
+ERROR_FILE_TOO_LARGE: "This file is too large. Please choose a smaller one."
+ERROR_INVALID_FILE: "Invalid file type. Please select an image or video."
 
-# ===========================================
-# ERROR MESSAGES
-# ===========================================
-
-# Error messages (if any are needed)
-ERROR_MEMORY_REQUIRED: "Please fill in all required fields"
-ERROR_FILE_TOO_LARGE: "File is too large to upload"
-ERROR_INVALID_FILE: "Please select a valid image or video file"
-
-# ===========================================
-# INSTRUCTIONS FOR EDITING
-# ===========================================
-
-# After editing this file:
-# 1. Save the file
-# 2. Let me know you're done editing
-# 3. I will update the application with your custom text
-# 4. You can always come back to this file to make more changes
-
-# Note: Keep the format exactly as shown above
-# Don't change the labels (like "MAIN_TITLE:") - only change the text after the colon
-# For quotes, separate each quote with a new line
-# For multi-line text, use \n for line breaks
+===========================================
+INSTRUCTIONS FOR EDITING
+===========================================
+After editing this file:
+1. Save the file
+2. Let me know you're done editing
+3. I will update the application with your custom text
+4. You can always come back to this file to make more changes
+Note: Keep the format exactly as shown above
+Don't change the labels (like "MAIN_TITLE:") - only change the text after the colon
+For quotes, separate each quote with a new line
+For multi-line text, use \n for line breaks
