@@ -1515,6 +1515,8 @@
             // Caption and date removed - clean image view only
             // lightboxCaption.textContent = memory.caption;
             // lightboxDate.textContent = dateStr;
+            // Force hide date element
+            lightboxDate.style.display = 'none';
             lightbox.classList.remove('hidden');
             lightbox.classList.add('fade-in');
 
