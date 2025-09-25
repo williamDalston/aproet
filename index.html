@@ -169,6 +169,12 @@
             transform: scale(1.15) rotate(6deg) translateY(-2px);
             filter: drop-shadow(0 4px 12px rgba(217, 119, 6, 0.2)) brightness(1.05);
             background: rgba(255, 255, 255, 0.22);
+            animation: romanticPulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes romanticPulse {
+            0%, 100% { box-shadow: 0 0 20px rgba(255, 192, 203, 0.3); }
+            50% { box-shadow: 0 0 30px rgba(255, 192, 203, 0.6), 0 0 40px rgba(255, 182, 193, 0.4); }
         }
 
 
@@ -440,8 +446,8 @@
     <!-- Navigation Bar -->
     <nav class="fixed top-0 left-0 right-0 z-20 glass-ultra p-4 flex justify-center gap-4 sm:gap-6">
         <button id="nav-home" class="btn-ethereal text-amber-800 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Return to home">Home</button>
-        <button id="nav-garden" class="btn-ethereal text-amber-800 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="View gallery">Gallery</button>
-        <button id="nav-timeline" class="btn-ethereal text-amber-800 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="View timeline">Timeline</button>
+        <button id="nav-garden" class="btn-ethereal text-amber-800 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="View gallery">💐 Gallery</button>
+        <button id="nav-timeline" class="btn-ethereal text-amber-800 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="View timeline">💕 Timeline</button>
         <button id="nav-love-notes" class="btn-ethereal text-amber-800 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="View love notes">💌 Notes</button>
         <button id="nav-add-memory" class="btn-ethereal text-amber-800 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Add memory">Add Memory</button>
         <button id="voice-recorder-btn" class="btn-ethereal text-amber-800 font-medium py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Record voice message">🎤 Record</button>
@@ -455,12 +461,19 @@
         <!-- Homepage Section -->
         <section id="home" class="min-h-screen flex flex-col items-center justify-center text-center p-4 sm:p-6 transition-all duration-700 ease-in-out">
             <div class="glass-ultra p-8 sm:p-12 rounded-2xl organic-border max-w-md sm:max-w-xl md:max-w-2xl mx-auto transform hover:scale-[1.015] transition-all duration-500 fade-in glow-soft">
-                <div class="text-4xl sm:text-5xl mb-4 animate-pulse opacity-80">✨</div>
+                <div class="text-4xl sm:text-5xl mb-4 animate-pulse opacity-80">💕</div>
                 <h1 class="font-serif italic text-3xl sm:text-5xl md:text-6xl title-wood-bg mb-4 leading-tight">For Taso</h1>
                 <p class="font-script text-lg sm:text-xl md:text-2xl text-white mb-2 italic drop-shadow-lg">Our Story So Far</p>
                 <p class="text-white text-sm sm:text-base md:text-lg mb-6 opacity-95 font-light drop-shadow-md">A collection of our memories, big and small. A dedication to the life we're building together.</p>
-                <button id="enter-garden" class="btn-ethereal text-white font-medium py-3 px-8 rounded-full text-base sm:text-lg relative overflow-hidden drop-shadow-lg" aria-label="Enter the memory gallery">
-                    <span class="relative z-10">Enter</span>
+                <div class="flex justify-center items-center gap-2 mb-4">
+                    <span class="text-2xl animate-pulse">💖</span>
+                    <span class="text-lg opacity-60">•</span>
+                    <span class="text-2xl animate-pulse" style="animation-delay: 0.5s">💖</span>
+                    <span class="text-lg opacity-60">•</span>
+                    <span class="text-2xl animate-pulse" style="animation-delay: 1s">💖</span>
+                </div>
+                <button id="enter-garden" class="btn-ethereal text-white font-medium py-3 px-8 rounded-full text-base sm:text-lg relative overflow-hidden drop-shadow-lg hover:scale-105 transition-all duration-300" aria-label="Enter the memory gallery">
+                    <span class="relative z-10">Enter Our Garden 💐</span>
                 </button>
             </div>
         </section>
@@ -533,7 +546,11 @@
                 <div class="text-center">
                     <p id="lightbox-caption" class="hidden text-amber-800 text-base sm:text-lg md:text-xl font-script leading-relaxed mb-2 italic"></p>
                     <p id="lightbox-date" class="hidden text-amber-600 text-sm mb-4 font-light"></p>
-                    <div class="text-lg sm:text-xl opacity-55">◇</div>
+                    <div class="flex justify-center items-center gap-2 text-lg sm:text-xl opacity-55">
+                        <span class="animate-pulse">💕</span>
+                        <span>◇</span>
+                        <span class="animate-pulse" style="animation-delay: 0.5s">💕</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1286,6 +1303,37 @@
             setTimeout(() => petal.remove(), 10000);
         };
         setInterval(createPetal, 2000);
+
+        // Floating hearts
+        const createFloatingHeart = () => {
+            const heart = document.createElement('div');
+            heart.className = 'floating-heart';
+            heart.innerHTML = '💕';
+            heart.style.position = 'fixed';
+            heart.style.left = `${Math.random() * 100}vw`;
+            heart.style.top = '100vh';
+            heart.style.fontSize = `${Math.random() * 20 + 15}px`;
+            heart.style.opacity = '0.7';
+            heart.style.pointerEvents = 'none';
+            heart.style.zIndex = '1';
+            heart.style.animation = `floatUp ${Math.random() * 3 + 4}s ease-out forwards`;
+            document.body.appendChild(heart);
+            setTimeout(() => heart.remove(), 7000);
+        };
+        
+        // Add floating heart animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes floatUp {
+                0% { transform: translateY(0) rotate(0deg); opacity: 0.7; }
+                50% { opacity: 1; }
+                100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(style);
+        
+        // Create hearts every 4-8 seconds
+        setInterval(createFloatingHeart, Math.random() * 4000 + 4000);
 
         // Populate garden
         allMemories.forEach((memory, index) => {
