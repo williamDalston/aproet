@@ -1,0 +1,1941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Eternal Love - Whispering Garden of Our Souls</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@200;300;400;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            margin: 0;
+            background: linear-gradient(-45deg, #FEF3C7, #FDE68A, #FCD34D, #F59E0B, #D97706, #F59E0B, #FCD34D, #FDE68A, #FEF3C7);
+            background-size: 800% 800%;
+            animation: etherealShift 35s ease infinite;
+        }
+
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .font-script {
+            font-family: 'Playfair Display', 'Georgia', serif;
+            font-style: italic;
+        }
+
+        /* Organic shapes and glows */
+        .organic-border {
+            border-radius: 40% 60% 60% 40% / 50% 50% 50% 50%;
+        }
+
+        .glow-soft {
+            box-shadow: 0 0 15px rgba(217, 119, 6, 0.3);
+            transition: box-shadow 0.4s;
+        }
+
+        .glow-soft:hover {
+            box-shadow: 0 0 25px rgba(217, 119, 6, 0.5);
+        }
+
+        /* Micro-animations and cursor */
+        .micro-bounce {
+            animation: microBounce 2s ease-in-out infinite;
+        }
+
+        @keyframes microBounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }
+
+        body {
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="rgba(217,119,6,0.5)" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>'), auto;
+        }
+
+        /* Refined light orbs with organic movement */
+        .light-orb {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255,255,255,0.35), rgba(217,119,6,0.1), transparent);
+            animation: driftOrganic 14s ease-in-out infinite;
+            pointer-events: none;
+            z-index: 1;
+            filter: blur(4px);
+        }
+
+        @keyframes driftOrganic {
+            0%, 100% { transform: translateY(0) translateX(0) scale(0.92); opacity: 0.35; }
+            25% { transform: translateY(-12px) translateX(8px) scale(1.02) rotate(3deg); opacity: 0.55; }
+            50% { transform: translateY(-25px) translateX(-12px) scale(1.15) rotate(-3deg); opacity: 0.45; }
+            75% { transform: translateY(-12px) translateX(4px) scale(1.0) rotate(2deg); opacity: 0.65; }
+        }
+
+        /* Ethereal particles */
+        .ethereal-particle {
+            position: absolute;
+            background: radial-gradient(circle, rgba(255,255,255,0.6), rgba(217,119,6,0.25));
+            border-radius: 50%;
+            animation: float 18s linear infinite;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg) scale(0); opacity: 0; }
+            10% { opacity: 0.4; transform: translateY(90vh) rotate(20deg) scale(0.7); }
+            90% { opacity: 0.15; transform: translateY(-10vh) rotate(250deg) scale(0.6); }
+            100% { transform: translateY(-20vh) rotate(360deg) scale(0); opacity: 0; }
+        }
+
+        /* Refined glassmorphism */
+        .glass-ultra {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(16px);
+            border-radius: 20px;
+            border: 1px solid rgba(217, 119, 6, 0.2);
+            box-shadow: 0 3px 20px rgba(217, 119, 6, 0.1);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.14);
+            backdrop-filter: blur(12px);
+            border-radius: 14px;
+            border: 1px solid rgba(217, 119, 6, 0.25);
+            box-shadow: 0 8px 32px rgba(217, 119, 6, 0.15);
+        }
+
+        /* Animations */
+        .fade-in {
+            animation: fadeIn 1.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); filter: blur(2px); }
+            to { opacity: 1; transform: translateY(0); filter: blur(0); }
+        }
+
+        .slide-up {
+            animation: slideUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Button effects */
+        .btn-ethereal {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(217, 119, 6, 0.1));
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+            box-shadow: 0 4px 16px rgba(217, 119, 6, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            white-space: normal;
+            word-wrap: break-word;
+            line-height: 1.2;
+        }
+
+        .btn-ethereal:hover {
+            transform: translateY(-1px) scale(1.01);
+            box-shadow: 0 10px 28px rgba(217, 119, 6, 0.15);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(217, 119, 6, 0.2));
+        }
+
+        /* Flower effects with hover preview */
+        .flower-delicate {
+            transition: all 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.06));
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 50%;
+            padding: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            position: relative;
+        }
+
+        .flower-delicate:hover {
+            transform: scale(1.15) rotate(6deg) translateY(-2px);
+            filter: drop-shadow(0 4px 12px rgba(217, 119, 6, 0.2)) brightness(1.05);
+            background: rgba(255, 255, 255, 0.22);
+        }
+
+        .flower-delicate .preview-tooltip {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            color: #1e293b;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s, transform 0.3s;
+            pointer-events: none;
+            margin-bottom: 8px;
+        }
+
+        .flower-delicate:hover .preview-tooltip {
+            opacity: 1;
+            transform: translateX(-50%) translateY(-4px);
+        }
+
+        /* Parallax */
+        .parallax {
+            transform: translateZ(0);
+            will-change: transform;
+        }
+
+        /* Gradient animation */
+        @keyframes etherealShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Text gradients */
+        .text-gradient {
+            background: linear-gradient(135deg, #D97706, #F59E0B, #FCD34D);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Quote rotator */
+        .quote-rotator {
+            animation: quoteFade 8s ease-in-out infinite;
+        }
+
+        @keyframes quoteFade {
+            0%, 20% { opacity: 1; }
+            30% { opacity: 0; }
+            40%, 60% { opacity: 1; }
+            70% { opacity: 0; }
+            80%, 100% { opacity: 1; }
+        }
+
+        /* Petal fall effect */
+        .petal-fall {
+            position: absolute;
+            background: radial-gradient(circle, rgba(216,180,254,0.4), transparent);
+            border-radius: 50% 20% 50% 20%;
+            animation: petalFall 10s linear infinite;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        @keyframes petalFall {
+            0% { transform: translateY(-10vh) rotate(0deg); opacity: 0.6; }
+            100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+        }
+
+        /* Mobile optimizations */
+        @media (max-width: 768px) {
+            .flower-delicate {
+                padding: 8px;
+            }
+            
+            .flower-delicate:hover {
+                transform: scale(1.1) rotate(3deg) translateY(-1px);
+            }
+            
+            .glass-ultra {
+                backdrop-filter: blur(12px);
+            }
+            
+            .glass-card {
+                backdrop-filter: blur(8px);
+            }
+            
+            /* Navigation button improvements on mobile */
+            nav .btn-ethereal {
+                flex: 1;
+                min-width: 0;
+                padding: 8px 12px;
+                font-size: 0.875rem;
+                white-space: normal;
+                word-wrap: break-word;
+                line-height: 1.2;
+                min-height: 44px;
+            }
+            
+            /* Reduce particle effects on mobile for performance */
+            .ethereal-particle {
+                animation-duration: 12s;
+            }
+            
+            .light-orb {
+                animation-duration: 10s;
+            }
+        }
+
+        /* Touch-friendly button sizes */
+        @media (max-width: 640px) {
+            .btn-ethereal {
+                min-height: 44px;
+                min-width: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                white-space: normal;
+                word-wrap: break-word;
+                line-height: 1.2;
+                padding: 8px 12px;
+            }
+            
+            .edit-memory-btn, .delete-memory-btn {
+                min-height: 32px;
+                min-width: 32px;
+                font-size: 0.75rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                white-space: normal;
+                word-wrap: break-word;
+                line-height: 1.2;
+            }
+        }
+
+        /* Accessibility improvements */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Focus styles for better keyboard navigation */
+        .btn-ethereal:focus,
+        .flower-delicate:focus,
+        .timeline-btn:focus {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+
+        /* High contrast mode support */
+        @media (prefers-contrast: high) {
+            .glass-ultra, .glass-card {
+                background: rgba(255, 255, 255, 0.9);
+                border: 2px solid #000;
+            }
+            
+            .text-gradient {
+                background: linear-gradient(135deg, #000, #333);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        /* Reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Custom slider styling */
+        .slider {
+            -webkit-appearance: none;
+            appearance: none;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        .slider::-webkit-slider-track {
+            background: linear-gradient(to right, #e5e7eb, #c7d2fe);
+            height: 8px;
+            border-radius: 4px;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(99, 102, 241, 0.3);
+            transition: all 0.2s ease;
+        }
+
+        .slider::-webkit-slider-thumb:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+        }
+
+        .slider::-moz-range-track {
+            background: linear-gradient(to right, #e5e7eb, #c7d2fe);
+            height: 8px;
+            border-radius: 4px;
+            border: none;
+        }
+
+        .slider::-moz-range-thumb {
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 2px 6px rgba(99, 102, 241, 0.3);
+        }
+
+        /* Voice settings improvements */
+        .voice-control-card {
+            transition: all 0.3s ease;
+        }
+
+        .voice-control-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Test button animation */
+        #test-voice {
+            transition: all 0.3s ease;
+        }
+
+        #test-voice:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(99, 102, 241, 0.2);
+        }
+
+        #test-voice:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    
+    <!-- Light orb container -->
+    <div id="orb-container" class="fixed top-0 left-0 w-full h-full pointer-events-none" aria-hidden="true"></div>
+    
+    <!-- Ethereal particle container -->
+    <div id="ethereal-container" class="fixed top-0 left-0 w-full h-full pointer-events-none" aria-hidden="true"></div>
+    
+    <!-- Petal fall container -->
+    <div id="petal-container" class="fixed top-0 left-0 w-full h-full pointer-events-none" aria-hidden="true"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-20 glass-ultra p-4 flex justify-center gap-4 sm:gap-6">
+        <button id="nav-home" class="btn-ethereal text-gray-800 font-light py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Return to home">Home</button>
+        <button id="nav-garden" class="btn-ethereal text-gray-800 font-light py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="View garden">Garden</button>
+        <button id="nav-timeline" class="btn-ethereal text-gray-800 font-light py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="View timeline">Timeline</button>
+        <button id="nav-love-notes" class="btn-ethereal text-gray-800 font-light py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="View love notes">💌 Notes</button>
+        <button id="nav-add-memory" class="btn-ethereal text-gray-800 font-light py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Add memory">Add Memory</button>
+        <button id="voice-recorder-btn" class="btn-ethereal text-gray-800 font-light py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Record voice message">🎤 Record</button>
+        <button id="voice-settings-btn" class="btn-ethereal text-gray-800 font-light py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Voice settings">🔊 Settings</button>
+        <button id="export-btn" class="btn-ethereal text-gray-800 font-light py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Export memories">📄 Export</button>
+        <button id="toggle-audio" class="btn-ethereal text-gray-800 font-light py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base micro-bounce" aria-label="Toggle background audio">♫ Play/Pause</button>
+    </nav>
+
+    <!-- Main Content Wrapper -->
+    <div class="relative z-10 pt-16 sm:pt-20">
+        <!-- Homepage Section -->
+        <section id="home" class="min-h-screen flex flex-col items-center justify-center text-center p-4 sm:p-6 transition-all duration-700 ease-in-out">
+            <div class="glass-ultra p-8 sm:p-12 rounded-2xl organic-border max-w-md sm:max-w-xl md:max-w-2xl mx-auto transform hover:scale-[1.015] transition-all duration-500 fade-in glow-soft">
+                <div class="text-4xl sm:text-5xl mb-4 animate-pulse opacity-80">✨</div>
+                <h1 class="font-serif italic text-3xl sm:text-5xl md:text-6xl text-gradient mb-4 leading-tight">For My Eternal Love, Taso Tsiklauri</h1>
+                <p class="font-script text-lg sm:text-xl md:text-2xl text-gray-700 mb-2 italic">A Whispering Garden of Our Souls</p>
+                <p class="text-gray-600 text-sm sm:text-base md:text-lg mb-6 opacity-75 font-light">Where whispers of time bloom into forever. A dedication: In your eyes, I found my forever.</p>
+                <button id="enter-garden" class="btn-ethereal text-gray-800 font-light py-3 px-8 rounded-full text-base sm:text-lg relative overflow-hidden" aria-label="Enter the whispering garden">
+                    <span class="relative z-10">Awaken the Garden ✧</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Garden Gallery Section -->
+        <section id="garden" class="hidden min-h-screen p-4 sm:p-8 md:p-12">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="font-serif italic text-3xl sm:text-4xl md:text-5xl text-gradient mb-4 leading-tight">Our Whispering Garden</h2>
+                <p class="text-base sm:text-lg md:text-xl text-gray-700 font-script mb-4 opacity-85 italic">Caress a bloom to awaken a veiled reverie</p>
+                <div class="w-16 sm:w-20 h-0.5 bg-gradient-to-r from-transparent via-gray-300 to-transparent mx-auto rounded-full opacity-50"></div>
+            </div>
+
+            <div id="garden-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 sm:gap-6 md:gap-8 max-w-7xl mx-auto mb-12 parallax"></div>
+
+            <div class="text-center glass-card p-6 sm:p-8 rounded-xl max-w-md sm:max-w-lg md:max-w-2xl mx-auto slide-up organic-border glow-soft">
+                <p class="font-script text-xl sm:text-2xl md:text-3xl text-gradient mb-4 leading-relaxed italic">
+                    "In this garden, our love defies the seasons, eternal as the stars"
+                </p>
+                <div class="text-xl sm:text-2xl opacity-60">✧ ◇ ✧</div>
+            </div>
+        </section>
+
+        <!-- Timeline Navigation -->
+        <section id="timeline" class="hidden py-12 px-4 sm:px-8 md:px-12 bg-gray-900/3">
+            <h2 class="font-serif italic text-2xl sm:text-3xl md:text-4xl text-gradient text-center mb-8 leading-tight">Our Timeless Journey</h2>
+            <div id="timeline-grid" class="max-w-3xl md:max-w-4xl mx-auto space-y-6 sm:space-y-8"></div>
+        </section>
+        
+        <!-- Love Notes Section -->
+        <section id="love-notes" class="hidden py-12 px-4 sm:px-8 md:px-12">
+            <h2 class="font-serif italic text-2xl sm:text-3xl md:text-4xl text-gradient text-center mb-8 leading-tight">Love Notes</h2>
+            <div class="text-center glass-card p-6 sm:p-8 rounded-xl max-w-md sm:max-w-lg md:max-w-2xl mx-auto slide-up organic-border glow-soft mb-8">
+                <p class="font-script text-lg sm:text-xl text-gray-700 mb-6 italic">Write a note about how you feel about each other</p>
+                <button id="add-love-note-btn" class="btn-ethereal text-gray-800 font-light py-3 px-8 rounded-full text-base sm:text-lg">Write a Love Note 💌</button>
+            </div>
+            <div id="love-notes-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
+                <!-- Love notes will be populated here -->
+            </div>
+        </section>
+
+        <!-- Add Memory Section -->
+        <section id="add-memory" class="hidden py-12 px-4 sm:px-8 md:px-12">
+            <h2 class="font-serif italic text-2xl sm:text-3xl md:text-4xl text-gradient text-center mb-8 leading-tight">Plant a New Bloom</h2>
+            <form id="memory-form" class="glass-card p-6 sm:p-8 rounded-xl max-w-md sm:max-w-lg mx-auto slide-up organic-border glow-soft">
+                <input type="text" id="new-caption" placeholder="Whisper your memory..." class="w-full mb-4 p-3 rounded border border-gray-300/50 font-script italic text-gray-700">
+                
+                <!-- File Upload Section -->
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Choose Photo or Video</label>
+                    <div class="relative">
+                        <input type="file" id="new-file" accept="image/*,video/*" class="hidden">
+                        <button type="button" id="file-browse-btn" class="w-full p-3 rounded border border-gray-300/50 text-gray-700 bg-white/80 backdrop-blur-sm hover:bg-white/90 transition-all duration-200 flex items-center justify-center gap-2">
+                            <span id="file-icon">📷</span>
+                            <span id="file-text">Browse Gallery</span>
+                        </button>
+                    </div>
+                    <div id="file-preview" class="mt-2 hidden">
+                        <div class="flex items-center gap-2 p-2 bg-green-100 rounded-lg">
+                            <span id="preview-icon">✅</span>
+                            <span id="preview-name" class="text-sm text-green-700"></span>
+                            <button type="button" id="remove-file" class="ml-auto text-red-500 hover:text-red-700">✕</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <input type="text" id="new-flower" placeholder="Choose a symbol (e.g., 🌹)..." class="w-full mb-4 p-3 rounded border border-gray-300/50 text-gray-700">
+                <input type="date" id="new-date" class="w-full mb-4 p-3 rounded border border-gray-300/50 text-gray-700">
+                <button type="submit" class="btn-ethereal w-full text-gray-800 font-light py-3 rounded-full">Plant the Memory ✿</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Refined Lightbox -->
+    <div id="lightbox" class="hidden fixed inset-0 z-50 bg-black/40 backdrop-blur-md">
+        <div id="lightbox-content" class="flex items-center justify-center p-4 min-h-screen">
+            <div class="glass-card max-w-md sm:max-w-lg md:max-w-xl w-full p-6 sm:p-8 relative fade-in organic-border glow-soft">
+                <button id="close-lightbox" class="absolute -top-2 -right-2 glass-ultra text-gray-700 rounded-full h-8 w-8 flex items-center justify-center text-base font-light shadow-md hover:scale-110 transition-all duration-300 border border-white/15" aria-label="Close lightbox">
+                    ✕
+                </button>
+                <button id="prev-memory" class="absolute left-2 top-1/2 transform -translate-y-1/2 glass-ultra text-gray-700 rounded-full h-10 w-10 flex items-center justify-center text-lg font-light shadow-md hover:scale-110 transition-all duration-300 border border-white/15" aria-label="Previous memory">
+                    ‹
+                </button>
+                <button id="next-memory" class="absolute right-2 top-1/2 transform -translate-y-1/2 glass-ultra text-gray-700 rounded-full h-10 w-10 flex items-center justify-center text-lg font-light shadow-md hover:scale-110 transition-all duration-300 border border-white/15" aria-label="Next memory">
+                    ›
+                </button>
+                <div id="lightbox-media" class="w-full h-auto object-cover rounded-xl mb-4 max-h-[60vh] sm:max-h-[70vh] shadow-lg"></div>
+                <div class="text-center">
+                    <p id="lightbox-caption" class="text-gray-800 text-base sm:text-lg md:text-xl font-script leading-relaxed mb-2 italic"></p>
+                    <p id="lightbox-date" class="text-gray-500 text-sm mb-4 font-light"></p>
+                    <div class="text-lg sm:text-xl opacity-55">◇</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Love Letter Modal -->
+    <div id="love-letter" class="hidden fixed inset-0 z-50 bg-black/35 backdrop-blur-md">
+        <div class="flex items-center justify-center p-4 min-h-screen">
+            <div class="glass-card max-w-md p-6 sm:p-8 relative fade-in organic-border glow-soft">
+                <button id="close-letter" class="absolute -top-2 -right-2 glass-ultra text-gray-700 rounded-full h-8 w-8 flex items-center justify-center text-base font-light shadow-md hover:scale-110 transition-all duration-300 border border-white/15" aria-label="Close letter">
+                    ✕
+                </button>
+                <h3 class="font-serif italic text-2xl text-gradient mb-4">A Secret Letter</h3>
+                <p class="font-script text-lg text-gray-800 italic leading-relaxed">My dearest Taso Tsiklauri,<br>Each bloom in this garden is a testament to our enduring love. As you explore, remember that every memory is but a chapter in our endless story. With all my heart, forever yours.</p>
+                <div class="text-center mt-4 text-xl opacity-60">♡</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer with Quote Rotator -->
+    <footer class="fixed bottom-0 left-0 right-0 z-20 glass-ultra p-4 text-center">
+        <p id="quote-rotator" class="font-script text-sm sm:text-base text-gray-600 opacity-70 quote-rotator" aria-live="polite"></p>
+    </footer>
+
+    <!-- Screen reader announcements -->
+    <div id="sr-announcements" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- Background Audio with multiple romantic options -->
+    <audio id="bg-audio" loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+        <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
+        <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Voice Recording for Personal Messages -->
+    <div id="voice-recorder" class="hidden fixed inset-0 z-50 bg-black/50 backdrop-blur-md">
+        <div class="flex items-center justify-center p-4 min-h-screen">
+            <div class="glass-card max-w-md p-6 sm:p-8 relative fade-in organic-border glow-soft">
+                <button id="close-recorder" class="absolute -top-2 -right-2 glass-ultra text-gray-700 rounded-full h-8 w-8 flex items-center justify-center text-base font-light shadow-md hover:scale-110 transition-all duration-300 border border-white/15" aria-label="Close recorder">
+                    ✕
+                </button>
+                <h3 class="font-serif italic text-xl text-gradient mb-4">Record a Love Message</h3>
+                <div class="text-center">
+                    <button id="record-btn" class="btn-ethereal text-gray-800 font-light py-3 px-6 rounded-full text-base mb-4">
+                        🎤 Start Recording
+                    </button>
+                    <div id="recording-status" class="text-sm text-gray-600 mb-4 hidden">
+                        <div class="flex items-center justify-center gap-2">
+                            <div class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+                            Recording... Click to stop
+                        </div>
+                    </div>
+                    <audio id="recorded-audio" controls class="w-full mb-4 hidden"></audio>
+                    <div class="flex gap-2 justify-center">
+                        <button id="save-recording" class="btn-ethereal text-gray-800 font-light py-2 px-4 rounded-full text-sm hidden">Save Message</button>
+                        <button id="play-recording" class="btn-ethereal text-gray-800 font-light py-2 px-4 rounded-full text-sm hidden">Play Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Voice Settings Modal -->
+    <div id="voice-settings-modal" class="hidden fixed inset-0 z-50 bg-black/50 backdrop-blur-md">
+        <div class="flex items-center justify-center p-4 min-h-screen">
+            <div class="glass-card max-w-lg p-6 sm:p-8 relative fade-in organic-border glow-soft">
+                <button id="close-voice-settings" class="absolute -top-2 -right-2 glass-ultra text-gray-700 rounded-full h-8 w-8 flex items-center justify-center text-base font-light shadow-md hover:scale-110 transition-all duration-300 border border-white/15" aria-label="Close voice settings">
+                    ✕
+                </button>
+                <h3 class="font-serif italic text-2xl text-gradient mb-6 text-center">Voice Settings</h3>
+                
+                <!-- Voice Selection with Preview -->
+                <div class="mb-6">
+                    <label class="block text-sm font-medium text-gray-700 mb-3">Choose Voice</label>
+                    <div class="relative">
+                        <select id="voice-select" class="w-full p-3 border border-gray-300/50 rounded-xl text-gray-700 bg-white/80 backdrop-blur-sm focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-200">
+                            <option value="auto">🎵 Auto-select best voice</option>
+                        </select>
+                        <div class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                            <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <button id="test-voice" class="w-full mt-3 btn-ethereal text-gray-800 font-light py-2 px-4 rounded-full text-sm flex items-center justify-center gap-2">
+                        <span>🎤</span>
+                        <span>Test This Voice</span>
+                    </button>
+                </div>
+
+                <!-- Voice Controls -->
+                <div class="space-y-5">
+                    <!-- Speed Control -->
+                    <div class="bg-white/30 rounded-xl p-4 backdrop-blur-sm">
+                        <div class="flex items-center justify-between mb-2">
+                            <label class="text-sm font-medium text-gray-700 flex items-center gap-2">
+                                <span>⚡</span>
+                                <span>Speed</span>
+                            </label>
+                            <span id="speed-value" class="text-sm font-mono text-indigo-600 bg-indigo-100 px-2 py-1 rounded">0.85x</span>
+                        </div>
+                        <input type="range" id="voice-speed" min="0.5" max="1.5" step="0.05" value="0.85" 
+                               class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider">
+                        <div class="flex justify-between text-xs text-gray-500 mt-1">
+                            <span>Slow</span>
+                            <span>Fast</span>
+                        </div>
+                    </div>
+
+                    <!-- Pitch Control -->
+                    <div class="bg-white/30 rounded-xl p-4 backdrop-blur-sm">
+                        <div class="flex items-center justify-between mb-2">
+                            <label class="text-sm font-medium text-gray-700 flex items-center gap-2">
+                                <span>🎵</span>
+                                <span>Pitch</span>
+                            </label>
+                            <span id="pitch-value" class="text-sm font-mono text-indigo-600 bg-indigo-100 px-2 py-1 rounded">1.0</span>
+                        </div>
+                        <input type="range" id="voice-pitch" min="0.5" max="2.0" step="0.05" value="1.0" 
+                               class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider">
+                        <div class="flex justify-between text-xs text-gray-500 mt-1">
+                            <span>Low</span>
+                            <span>High</span>
+                        </div>
+                    </div>
+
+                    <!-- Volume Control -->
+                    <div class="bg-white/30 rounded-xl p-4 backdrop-blur-sm">
+                        <div class="flex items-center justify-between mb-2">
+                            <label class="text-sm font-medium text-gray-700 flex items-center gap-2">
+                                <span>🔊</span>
+                                <span>Volume</span>
+                            </label>
+                            <span id="volume-value" class="text-sm font-mono text-indigo-600 bg-indigo-100 px-2 py-1 rounded">0.9</span>
+                        </div>
+                        <input type="range" id="voice-volume" min="0.1" max="1.0" step="0.05" value="0.9" 
+                               class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider">
+                        <div class="flex justify-between text-xs text-gray-500 mt-1">
+                            <span>Quiet</span>
+                            <span>Loud</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex gap-3 mt-6">
+                    <button id="reset-voice-settings" class="flex-1 btn-ethereal text-gray-800 font-light py-3 px-4 rounded-full text-sm">
+                        🔄 Reset
+                    </button>
+                    <button id="save-voice-settings" class="flex-1 btn-ethereal text-gray-800 font-light py-3 px-4 rounded-full text-sm bg-gradient-to-r from-indigo-500 to-purple-500 text-white">
+                        💾 Save Settings
+                    </button>
+                </div>
+
+                <!-- Current Voice Display -->
+                <div id="current-voice-display" class="mt-4 p-3 bg-gradient-to-r from-indigo-100 to-purple-100 rounded-xl text-center">
+                    <p class="text-sm text-gray-600">Current voice: <span id="current-voice-name" class="font-medium text-indigo-700">Auto-select</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Love Note Modal -->
+    <div id="love-note-modal" class="hidden fixed inset-0 z-50 bg-black/35 backdrop-blur-md">
+        <div class="flex items-center justify-center p-4 min-h-screen">
+            <div class="glass-card max-w-md p-6 sm:p-8 relative fade-in organic-border glow-soft">
+                <button id="close-love-note" class="absolute -top-2 -right-2 glass-ultra text-gray-700 rounded-full h-8 w-8 flex items-center justify-center text-base font-light shadow-md hover:scale-110 transition-all duration-300 border border-white/15" aria-label="Close love note">
+                    ✕
+                </button>
+                <h3 class="font-serif italic text-xl text-gradient mb-4">Write a Love Note</h3>
+                <form id="love-note-form">
+                    <textarea id="love-note-text" placeholder="Write your feelings here..." class="w-full mb-4 p-3 rounded border border-gray-300/50 font-script italic text-gray-700 h-32 resize-none"></textarea>
+                    <input type="text" id="love-note-title" placeholder="Title (optional)" class="w-full mb-4 p-3 rounded border border-gray-300/50 font-script italic text-gray-700">
+                    <button type="submit" class="btn-ethereal w-full text-gray-800 font-light py-3 rounded-full">Save Love Note 💌</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Export Options Modal -->
+    <div id="export-modal" class="hidden fixed inset-0 z-50 bg-black/50 backdrop-blur-md">
+        <div class="flex items-center justify-center p-4 min-h-screen">
+            <div class="glass-card max-w-md p-6 sm:p-8 relative fade-in organic-border glow-soft">
+                <button id="close-export" class="absolute -top-2 -right-2 glass-ultra text-gray-700 rounded-full h-8 w-8 flex items-center justify-center text-base font-light shadow-md hover:scale-110 transition-all duration-300 border border-white/15" aria-label="Close export">
+                    ✕
+                </button>
+                <h3 class="font-serif italic text-xl text-gradient mb-4">Export Our Love Story</h3>
+                <div class="text-center space-y-4">
+                    <p class="text-gray-600 mb-6">Choose how you'd like to preserve our memories</p>
+                    <button id="export-json" class="btn-ethereal text-gray-800 font-light py-3 px-6 rounded-full text-base w-full">
+                        📄 Export as JSON (Data Backup)
+                    </button>
+                    <button id="export-text" class="btn-ethereal text-gray-800 font-light py-3 px-6 rounded-full text-base w-full">
+                        📝 Export as Love Letter (Text)
+                    </button>
+                    <p class="text-xs text-gray-500 mt-4">
+                        Total memories: <span id="memory-count">0</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    const memories = [
+        { photoUrl: 'Assets/_DSC1205.JPG', caption: 'In that twilight hush, I heard eternity in your gaze, a home woven from starlight.', flower: '🤍', isVideo: false, date: '2024-01-15' },
+        { photoUrl: 'Assets/_DSC1913 copy.jpg', caption: 'Sunset\'s golden veil draped our dreams, birthing realities from fleeting light.', flower: '🌾', isVideo: false, date: '2024-02-20' },
+        { photoUrl: 'Assets/_DSC2149.jpg', caption: 'With each shared stride, we trace constellations unseen by mortal eyes.', flower: '✦', isVideo: false, date: '2024-03-10' },
+        { photoUrl: 'Assets/_DSC2184 copy.jpg', caption: 'Amid our poetic tempests, perfection emerged from harmonious disarray.', flower: '◊', isVideo: false, date: '2024-04-05' },
+        { photoUrl: 'Assets/att.xOKG4HmHSwEs_egm4cG18fb_0-JcOPvWE3EL--soZWI.JPG', caption: 'Through tempests of heart and sky, you anchor my wandering soul.', flower: '🌙', isVideo: false, date: '2024-05-12' },
+        { photoUrl: 'Assets/c60b2d44-8c2e-4b89-8db3-92c29c363cd0.JPG', caption: 'Another cycle of the sun, yet our vows echo infinitely through time.', flower: '✨', isVideo: false, date: '2024-06-18' },
+        { photoUrl: 'Assets/efbe8129-6156-4d19-809f-137921aaa0ad.jpg', caption: 'Your melody of joy orchestrates the cosmos into sublime order.', flower: '☾', isVideo: false, date: '2024-07-25' },
+        { photoUrl: 'Assets/IMG_2826 5.jpg', caption: 'Atop earthly heights, our union ascends beyond the visible horizon.', flower: '⋄', isVideo: false, date: '2024-08-30' },
+        { photoUrl: 'Assets/IMG_3905.jpg', caption: 'Crafting legends from threads of ritual, binding our essences eternally.', flower: '❋', isVideo: false, date: '2024-09-14' },
+        { photoUrl: 'Assets/IMG_4710.jpg', caption: 'In quietude, our spirits compose a symphony known only to lovers.', flower: '◦', isVideo: false, date: '2024-10-22' },
+    ];
+
+    const quotes = [
+        "In your light I learn how to love. – Rumi",
+        "To love and be loved is to feel the sun from both sides. – David Viscott",
+        "You know you're in love when you can't fall asleep because reality is finally better than your dreams. – Dr. Seuss",
+        "I saw that you were perfect, and so I loved you. – Unknown",
+        "Love is composed of a single soul inhabiting two bodies. – Aristotle",
+        "The best thing to hold onto in life is each other. – Audrey Hepburn",
+        "I have found the one whom my soul loves. – Song of Solomon 3:4"
+    ];
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const sections = {
+            home: document.getElementById('home'),
+            garden: document.getElementById('garden'),
+            timeline: document.getElementById('timeline'),
+            loveNotes: document.getElementById('love-notes'),
+            addMemory: document.getElementById('add-memory')
+        };
+        const navHome = document.getElementById('nav-home');
+        const navGarden = document.getElementById('nav-garden');
+        const navTimeline = document.getElementById('nav-timeline');
+        const navLoveNotes = document.getElementById('nav-love-notes');
+        const navAddMemory = document.getElementById('nav-add-memory');
+        const enterGardenBtn = document.getElementById('enter-garden');
+        const addLoveNoteBtn = document.getElementById('add-love-note-btn');
+        const loveNoteModal = document.getElementById('love-note-modal');
+        const closeLoveNote = document.getElementById('close-love-note');
+        const loveNoteForm = document.getElementById('love-note-form');
+        const loveNoteText = document.getElementById('love-note-text');
+        const loveNoteTitle = document.getElementById('love-note-title');
+        const loveNotesGrid = document.getElementById('love-notes-grid');
+        const gardenGrid = document.getElementById('garden-grid');
+        const timelineGrid = document.getElementById('timeline-grid');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxContent = document.getElementById('lightbox-content');
+        const lightboxMedia = document.getElementById('lightbox-media');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        const lightboxDate = document.getElementById('lightbox-date');
+        const closeLightboxBtn = document.getElementById('close-lightbox');
+        const prevMemoryBtn = document.getElementById('prev-memory');
+        const nextMemoryBtn = document.getElementById('next-memory');
+        const quoteRotator = document.getElementById('quote-rotator');
+        const bgAudio = document.getElementById('bg-audio');
+        const toggleAudio = document.getElementById('toggle-audio');
+        const loveLetter = document.getElementById('love-letter');
+        const closeLetter = document.getElementById('close-letter');
+        const memoryForm = document.getElementById('memory-form');
+        const srAnnouncements = document.getElementById('sr-announcements');
+        const newFile = document.getElementById('new-file');
+        const fileBrowseBtn = document.getElementById('file-browse-btn');
+        const fileIcon = document.getElementById('file-icon');
+        const fileText = document.getElementById('file-text');
+        const filePreview = document.getElementById('file-preview');
+        const previewName = document.getElementById('preview-name');
+        const removeFile = document.getElementById('remove-file');
+        const voiceRecorder = document.getElementById('voice-recorder');
+        const voiceRecorderBtn = document.getElementById('voice-recorder-btn');
+        const closeRecorder = document.getElementById('close-recorder');
+        const recordBtn = document.getElementById('record-btn');
+        const recordingStatus = document.getElementById('recording-status');
+        const recordedAudio = document.getElementById('recorded-audio');
+        const saveRecording = document.getElementById('save-recording');
+        const playRecording = document.getElementById('play-recording');
+        const exportBtn = document.getElementById('export-btn');
+        const exportModal = document.getElementById('export-modal');
+        const closeExport = document.getElementById('close-export');
+        const exportJson = document.getElementById('export-json');
+        const exportText = document.getElementById('export-text');
+        const memoryCount = document.getElementById('memory-count');
+        const voiceSettingsModal = document.getElementById('voice-settings-modal');
+        const voiceSettingsBtn = document.getElementById('voice-settings-btn');
+        const closeVoiceSettings = document.getElementById('close-voice-settings');
+        const voiceSelect = document.getElementById('voice-select');
+        const voiceSpeed = document.getElementById('voice-speed');
+        const voicePitch = document.getElementById('voice-pitch');
+        const voiceVolume = document.getElementById('voice-volume');
+        const speedValue = document.getElementById('speed-value');
+        const pitchValue = document.getElementById('pitch-value');
+        const volumeValue = document.getElementById('volume-value');
+        const testVoice = document.getElementById('test-voice');
+        const saveVoiceSettings = document.getElementById('save-voice-settings');
+        const resetVoiceSettings = document.getElementById('reset-voice-settings');
+        const currentVoiceName = document.getElementById('current-voice-name');
+
+        // Load saved memories from localStorage
+        const savedMemories = JSON.parse(localStorage.getItem('memories')) || [];
+        const allMemories = [...memories, ...savedMemories];
+
+        // Load saved love notes from localStorage
+        const savedLoveNotes = JSON.parse(localStorage.getItem('loveNotes')) || [];
+        let allLoveNotes = [...savedLoveNotes];
+
+        // Voice settings with more realistic defaults
+        let voiceSettings = JSON.parse(localStorage.getItem('voiceSettings')) || {
+            voice: 'auto',
+            rate: 0.85,  // Slightly slower for more natural speech
+            pitch: 1.0,  // More natural pitch
+            volume: 0.9  // Higher volume for clarity
+        };
+
+        // File browser functionality
+        let selectedFile = null;
+
+        const updateFileButton = () => {
+            if (selectedFile) {
+                const isVideo = selectedFile.type.startsWith('video/');
+                fileIcon.textContent = isVideo ? '🎥' : '📷';
+                fileText.textContent = 'Change File';
+                filePreview.classList.remove('hidden');
+                previewName.textContent = selectedFile.name;
+            } else {
+                fileIcon.textContent = '📷';
+                fileText.textContent = 'Browse Gallery';
+                filePreview.classList.add('hidden');
+            }
+        };
+
+        const detectDevice = () => {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            return /android|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+        };
+
+        const updateFileButtonText = () => {
+            const isMobile = detectDevice();
+            if (!selectedFile) {
+                fileText.textContent = isMobile ? 'Browse Gallery' : 'Browse Files';
+            }
+        };
+
+        // Love notes functions
+        const populateLoveNotes = () => {
+            loveNotesGrid.innerHTML = '';
+            allLoveNotes.forEach((note, index) => {
+                const noteElement = document.createElement('div');
+                noteElement.className = 'glass-card p-4 sm:p-6 rounded-xl organic-border glow-soft cursor-pointer hover:scale-105 transition-all duration-300';
+                noteElement.innerHTML = `
+                    <div class="text-center">
+                        <div class="text-3xl mb-3">💌</div>
+                        <h3 class="font-serif italic text-lg text-gradient mb-2">${note.title || 'Love Note'}</h3>
+                        <p class="font-script text-sm text-gray-700 italic leading-relaxed mb-3">${note.text}</p>
+                        <div class="flex gap-2 justify-center">
+                            <button class="edit-love-note-btn text-xs px-2 py-1 bg-amber-100 text-amber-700 rounded hover:bg-amber-200 transition-colors" data-index="${index}">Edit</button>
+                            <button class="delete-love-note-btn text-xs px-2 py-1 bg-red-100 text-red-700 rounded hover:bg-red-200 transition-colors" data-index="${index}">Delete</button>
+                        </div>
+                    </div>
+                `;
+                loveNotesGrid.appendChild(noteElement);
+            });
+        };
+
+        const addLoveNoteToGarden = () => {
+            // Add love notes to the garden as special flowers
+            allLoveNotes.forEach((note, index) => {
+                const loveNoteMemory = {
+                    photoUrl: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDYwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfMF8xKSIvPgo8Y2lyY2xlIGN4PSIzMDAiIGN5PSIyMDAiIHI9IjgwIiBmaWxsPSIjRkZGRkZGIiBmaWxsLW9wYWNpdHk9IjAuOSIvPgo8cGF0aCBkPSJNMjQwIDE2MEwyNDAgMjQwTDI4MCAyMDBMMjQwIDE2MFoiIGZpbGw9IiNENzE3MDYiLz4KPHA+YXRoIGQ9Ik0zNjAgMTYwTDM2MCAyNDBMMzIwIDIwMEwzNjAgMTYwWiIgZmlsbD0iI0Q3MTcwNiIvPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzBfMSIgeDE9IjAiIHkxPSIwIiB4Mj0iNjAwIiB5Mj0iNDAwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiNGRkZGRkYiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjRkZGRkZGIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+',
+                    caption: note.title ? `${note.title}: ${note.text}` : note.text,
+                    flower: '💌',
+                    date: note.date || new Date().toISOString().split('T')[0],
+                    isVideo: false,
+                    isLoveNote: true,
+                    loveNoteId: index
+                };
+                allMemories.push(loveNoteMemory);
+            });
+        };
+
+        // Screen reader announcement function
+        const announceToScreenReader = (message) => {
+            srAnnouncements.textContent = message;
+            setTimeout(() => {
+                srAnnouncements.textContent = '';
+            }, 1000);
+        };
+
+        // Voice recording functionality
+        let mediaRecorder;
+        let audioChunks = [];
+        let isRecording = false;
+
+        const startRecording = async () => {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                mediaRecorder = new MediaRecorder(stream);
+                audioChunks = [];
+
+                mediaRecorder.ondataavailable = (event) => {
+                    audioChunks.push(event.data);
+                };
+
+                mediaRecorder.onstop = () => {
+                    const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+                    const audioUrl = URL.createObjectURL(audioBlob);
+                    recordedAudio.src = audioUrl;
+                    recordedAudio.classList.remove('hidden');
+                    saveRecording.classList.remove('hidden');
+                    playRecording.classList.remove('hidden');
+                    recordingStatus.classList.add('hidden');
+                    recordBtn.textContent = '🎤 Record Again';
+                    recordBtn.classList.remove('hidden');
+                };
+
+                mediaRecorder.start();
+                isRecording = true;
+                recordBtn.classList.add('hidden');
+                recordingStatus.classList.remove('hidden');
+                announceToScreenReader('Recording started');
+            } catch (error) {
+                console.error('Error accessing microphone:', error);
+                alert('Unable to access microphone. Please check permissions.');
+            }
+        };
+
+        const stopRecording = () => {
+            if (mediaRecorder && isRecording) {
+                mediaRecorder.stop();
+                isRecording = false;
+                announceToScreenReader('Recording stopped');
+            }
+        };
+
+        const playRecordedAudio = () => {
+            recordedAudio.play();
+        };
+
+        const saveVoiceMessage = () => {
+            const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+            
+            // Convert blob to base64 for local storage
+            const reader = new FileReader();
+            reader.onload = function() {
+                const base64Audio = reader.result;
+                
+                // Create a new memory with the voice message
+                const voiceMemory = {
+                    photoUrl: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDYwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfMF8xKSIvPgo8Y2lyY2xlIGN4PSIzMDAiIGN5PSIyMDAiIHI9IjgwIiBmaWxsPSIjRkZGRkZGIiBmaWxsLW9wYWNpdHk9IjAuOSIvPgo8cGF0aCBkPSJNMjQwIDE2MEwyNDAgMjQwTDI4MCAyMDBMMjQwIDE2MFoiIGZpbGw9IiM2MzY2RjEiLz4KPHA+YXRoIGQ9Ik0zNjAgMTYwTDM2MCAyNDBMMzIwIDIwMEwzNjAgMTYwWiIgZmlsbD0iIzYzNjZGMiIvPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzBfMSIgeDE9IjAiIHkxPSIwIiB4Mj0iNjAwIiB5Mj0iNDAwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiNBMUJDRkYiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjQzJEMkZGIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+',
+                    caption: 'A whispered message from my heart to yours, Taso.',
+                    flower: '🎤',
+                    date: new Date().toISOString().split('T')[0],
+                    isVideo: false,
+                    isAudio: true,
+                    audioData: base64Audio // Store as base64 for local persistence
+                };
+                
+                savedMemories.push(voiceMemory);
+                localStorage.setItem('memories', JSON.stringify(savedMemories));
+                announceToScreenReader('Voice message saved successfully');
+                voiceRecorder.classList.add('hidden');
+                location.reload();
+            };
+            reader.readAsDataURL(audioBlob);
+        };
+
+        // Export functionality
+        const exportMemories = () => {
+            const exportData = {
+                title: "For My Eternal Love - Taso Tsiklauri",
+                subtitle: "A Whispering Garden of Our Souls",
+                exportDate: new Date().toISOString(),
+                memories: allMemories.map((memory, index) => ({
+                    id: index + 1,
+                    caption: memory.caption,
+                    date: memory.date,
+                    flower: memory.flower,
+                    type: memory.isVideo ? 'video' : memory.isAudio ? 'audio' : 'image',
+                    url: memory.photoUrl || memory.audioUrl
+                })),
+                totalMemories: allMemories.length,
+                message: "This is a digital love letter containing our precious memories together. Each entry represents a moment in time that we've shared, captured forever in this garden of our souls."
+            };
+
+            // Create downloadable JSON file
+            const dataStr = JSON.stringify(exportData, null, 2);
+            const dataBlob = new Blob([dataStr], { type: 'application/json' });
+            const url = URL.createObjectURL(dataBlob);
+            
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `Love_Letter_Taso_${new Date().toISOString().split('T')[0]}.json`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+
+            announceToScreenReader('Memories exported successfully');
+        };
+
+        const exportAsText = () => {
+            let textContent = `FOR MY ETERNAL LOVE - TASO TSIKLAURI\n`;
+            textContent += `A Whispering Garden of Our Souls\n`;
+            textContent += `Exported on: ${new Date().toLocaleDateString()}\n\n`;
+            textContent += `This is a digital love letter containing our precious memories together.\n`;
+            textContent += `Each entry represents a moment in time that we've shared, captured forever in this garden of our souls.\n\n`;
+            textContent += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n`;
+
+            allMemories.forEach((memory, index) => {
+                const dateStr = memory.date ? new Date(memory.date).toLocaleDateString('en-US', { 
+                    year: 'numeric', 
+                    month: 'long', 
+                    day: 'numeric' 
+                }) : 'Unknown Date';
+                
+                textContent += `Memory ${index + 1} - ${dateStr}\n`;
+                textContent += `Symbol: ${memory.flower}\n`;
+                textContent += `Type: ${memory.isVideo ? 'Video' : memory.isAudio ? 'Voice Message' : 'Photo'}\n`;
+                textContent += `Message: ${memory.caption}\n`;
+                if (memory.photoUrl && !memory.isAudio) {
+                    textContent += `Media: ${memory.photoUrl}\n`;
+                }
+                textContent += `\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n`;
+            });
+
+            textContent += `\nWith all my love,\nForever yours\n\n`;
+            textContent += `"In your light I learn how to love. In your beauty, how to make poems. You dance inside my chest where no one sees you, but sometimes I do, and that sight becomes this art." - Rumi\n`;
+
+            const dataBlob = new Blob([textContent], { type: 'text/plain' });
+            const url = URL.createObjectURL(dataBlob);
+            
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `Love_Letter_Taso_${new Date().toISOString().split('T')[0]}.txt`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+
+            announceToScreenReader('Love letter exported as text');
+        };
+
+        // Voice settings functionality
+        const loadVoiceSettings = () => {
+            voiceSpeed.value = voiceSettings.rate;
+            voicePitch.value = voiceSettings.pitch;
+            voiceVolume.value = voiceSettings.volume;
+            speedValue.textContent = `${voiceSettings.rate}x`;
+            pitchValue.textContent = voiceSettings.pitch;
+            volumeValue.textContent = voiceSettings.volume;
+
+            // Update current voice display
+            updateCurrentVoiceDisplay();
+
+            // Load available voices with quality indicators
+            const loadVoices = () => {
+                const voices = speechSynthesis.getVoices();
+                voiceSelect.innerHTML = '<option value="auto">🎵 Auto-select best voice</option>';
+                
+                // Filter for only the best voices
+                const bestVoices = voices.filter(voice => {
+                    if (!voice.lang.startsWith('en')) return false;
+                    
+                    const name = voice.name.toLowerCase();
+                    return name.includes('neural') || 
+                           name.includes('enhanced') || 
+                           name.includes('premium') ||
+                           name.includes('samantha') ||
+                           name.includes('karen') ||
+                           name.includes('victoria') ||
+                           name.includes('zira') ||
+                           name.includes('hazel') ||
+                           name.includes('susan') ||
+                           name.includes('mark') ||
+                           name.includes('david') ||
+                           name.includes('alex') ||
+                           name.includes('daniel') ||
+                           name.includes('fiona') ||
+                           name.includes('moira') ||
+                           name.includes('tessa') ||
+                           name.includes('veena');
+                });
+                
+                // Add best voices
+                bestVoices.forEach(voice => {
+                    const option = document.createElement('option');
+                    option.value = voice.name;
+                    option.textContent = `${voice.name} (${voice.lang})`;
+                    if (voice.name === voiceSettings.voice) {
+                        option.selected = true;
+                    }
+                    voiceSelect.appendChild(option);
+                });
+            };
+
+            if (speechSynthesis.getVoices().length === 0) {
+                speechSynthesis.onvoiceschanged = loadVoices;
+            } else {
+                loadVoices();
+            }
+        };
+
+        const updateCurrentVoiceDisplay = () => {
+            if (voiceSettings.voice === 'auto') {
+                currentVoiceName.textContent = 'Auto-select';
+            } else {
+                currentVoiceName.textContent = voiceSettings.voice;
+            }
+        };
+
+        const resetToDefaults = () => {
+            voiceSettings = {
+                voice: 'auto',
+                rate: 0.85,  // More natural speed
+                pitch: 1.0,  // More natural pitch
+                volume: 0.9  // Higher volume for clarity
+            };
+            loadVoiceSettings();
+            announceToScreenReader('Voice settings reset to defaults');
+        };
+
+        const speakWithSettings = (text) => {
+            if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance(text);
+                const voices = speechSynthesis.getVoices();
+                
+                // Stop any current speech
+                speechSynthesis.cancel();
+                
+                console.log('Available voices:', voices.map(v => v.name));
+                console.log('Selected voice setting:', voiceSettings.voice);
+                
+                if (voiceSettings.voice !== 'auto') {
+                    // Find voice by name
+                    const selectedVoice = voices.find(voice => voice.name === voiceSettings.voice);
+                    if (selectedVoice) {
+                        utterance.voice = selectedVoice;
+                        console.log('Using voice:', selectedVoice.name);
+                    } else {
+                        console.log('Voice not found, using default');
+                    }
+                } else {
+                    // Auto-select most realistic voice
+                    let selectedVoice = voices.find(voice => 
+                        voice.lang.startsWith('en') && 
+                        (voice.name.includes('Samantha') ||  // macOS - very natural
+                         voice.name.includes('Karen') ||      // macOS - natural
+                         voice.name.includes('Victoria') ||   // macOS - natural
+                         voice.name.includes('Zira') ||       // Windows - natural
+                         voice.name.includes('Hazel') ||      // Windows - natural
+                         voice.name.includes('Susan') ||      // Windows - natural
+                         voice.name.includes('Mark') ||       // Windows - natural
+                         voice.name.includes('David') ||      // Windows - natural
+                         voice.name.includes('Alex') ||       // macOS - natural
+                         voice.name.includes('Daniel') ||     // macOS - natural
+                         voice.name.includes('Enhanced') ||   // Enhanced voices
+                         voice.name.includes('Neural') ||     // Neural voices
+                         voice.name.includes('Premium') ||    // Premium voices
+                         voice.name.includes('Natural') ||    // Natural voices
+                         voice.name.includes('Female') ||
+                         voice.name.includes('Male'))
+                    );
+                    
+                    if (!selectedVoice) {
+                        selectedVoice = voices.find(voice => voice.lang.startsWith('en'));
+                    }
+                    
+                    if (selectedVoice) {
+                        utterance.voice = selectedVoice;
+                        console.log('Auto-selected voice:', selectedVoice.name);
+                    }
+                }
+                
+                // More natural speech parameters
+                utterance.rate = voiceSettings.rate;
+                utterance.pitch = voiceSettings.pitch;
+                utterance.volume = voiceSettings.volume;
+                
+                // Add natural pauses and emphasis
+                const naturalText = text
+                    .replace(/,/g, ', ')  // Add pause after commas
+                    .replace(/\./g, '. ') // Add pause after periods
+                    .replace(/\?/g, '? ') // Add pause after questions
+                    .replace(/!/g, '! ')  // Add pause after exclamations
+                    .replace(/\s+/g, ' ') // Clean up extra spaces
+                    .trim();
+                
+                utterance.text = naturalText;
+                
+                console.log('Speech settings:', {
+                    rate: utterance.rate,
+                    pitch: utterance.pitch,
+                    volume: utterance.volume,
+                    voice: utterance.voice?.name || 'default'
+                });
+                
+                // Add a small delay to ensure voice is set
+                setTimeout(() => {
+                    speechSynthesis.speak(utterance);
+                }, 100);
+            }
+        };
+
+        // Orbs (reduced to 4)
+        const orbContainer = document.getElementById('orb-container');
+        for (let i = 0; i < 4; i++) {
+            const orb = document.createElement('div');
+            orb.className = 'light-orb';
+            const size = Math.random() * 70 + 30;
+            orb.style.width = `${size}px`;
+            orb.style.height = `${size}px`;
+            orb.style.left = `${Math.random() * 100}vw`;
+            orb.style.top = `${Math.random() * 100}vh`;
+            orb.style.animationDelay = `${Math.random() * 5}s`;
+            orbContainer.appendChild(orb);
+        }
+
+        // Particles (reduced to 6 initial)
+        const etherealContainer = document.getElementById('ethereal-container');
+        const createParticle = () => {
+            const particle = document.createElement('div');
+            particle.className = 'ethereal-particle';
+            const size = Math.random() * 12 + 4;
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+            particle.style.left = `${Math.random() * 100}vw`;
+            particle.style.animationDuration = `${Math.random() * 7 + 11}s`;
+            etherealContainer.appendChild(particle);
+            setTimeout(() => particle.remove(), 18000);
+        };
+        for (let i = 0; i < 6; i++) setTimeout(createParticle, i * 500);
+        setInterval(createParticle, 3000);
+
+        // Petal fall
+        const petalContainer = document.getElementById('petal-container');
+        const createPetal = () => {
+            const petal = document.createElement('div');
+            petal.className = 'petal-fall';
+            const size = Math.random() * 10 + 5;
+            petal.style.width = `${size}px`;
+            petal.style.height = `${size * 1.5}px`;
+            petal.style.left = `${Math.random() * 100}vw`;
+            petal.style.animationDuration = `${Math.random() * 5 + 8}s`;
+            petalContainer.appendChild(petal);
+            setTimeout(() => petal.remove(), 10000);
+        };
+        setInterval(createPetal, 2000);
+
+        // Populate garden
+        allMemories.forEach((memory, index) => {
+            const flowerItem = document.createElement('div');
+            flowerItem.className = 'flex items-center justify-center slide-up relative';
+            flowerItem.style.animationDelay = `${index * 0.08}s`;
+            flowerItem.innerHTML = `
+                <button data-index="${index}" class="flower-btn flower-delicate text-3xl sm:text-4xl md:text-5xl transform transition-all duration-400 focus:outline-none focus:ring-2 focus:ring-white/15 rounded-full glow-soft" aria-label="View reverie ${index + 1}">
+                    ${memory.flower}
+                    <span class="preview-tooltip">${memory.caption}</span>
+                </button>
+            `;
+            gardenGrid.appendChild(flowerItem);
+        });
+
+        // Sort memories by date for timeline
+        const sortedMemories = [...allMemories].sort((a, b) => new Date(a.date || '2024-01-01') - new Date(b.date || '2024-01-01'));
+        
+        // Populate timeline
+        sortedMemories.forEach((memory, index) => {
+            const originalIndex = allMemories.indexOf(memory);
+            const timelineItem = document.createElement('div');
+            timelineItem.className = 'flex items-center gap-3 sm:gap-4 slide-up';
+            timelineItem.style.animationDelay = `${index * 0.08}s`;
+            
+            const dateStr = memory.date ? new Date(memory.date).toLocaleDateString('en-US', { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            }) : 'Unknown Date';
+            
+            timelineItem.innerHTML = `
+                <div class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-white font-light text-sm sm:text-base">${index + 1}</div>
+                <div class="flex-grow glass-card p-3 sm:p-4 rounded-lg italic organic-border glow-soft">
+                    <div class="cursor-pointer timeline-btn" data-index="${originalIndex}" role="button" aria-label="View reverie ${index + 1}">
+                        <p class="font-script text-base sm:text-lg text-gray-800 leading-relaxed">${memory.caption}</p>
+                        <p class="text-xs text-gray-500 mt-1 font-light">${dateStr}</p>
+                    </div>
+                    <div class="flex gap-2 mt-2">
+                        <button class="edit-memory-btn text-xs px-2 py-1 bg-amber-100 text-amber-700 rounded hover:bg-amber-200 transition-colors flex items-center justify-center" data-index="${originalIndex}">Edit</button>
+                        <button class="delete-memory-btn text-xs px-2 py-1 bg-red-100 text-red-700 rounded hover:bg-red-200 transition-colors flex items-center justify-center" data-index="${originalIndex}">Delete</button>
+                    </div>
+                </div>
+            `;
+            timelineGrid.appendChild(timelineItem);
+        });
+
+        // Quote rotator
+        let quoteIndex = 0;
+        quoteRotator.textContent = quotes[quoteIndex];
+        setInterval(() => {
+            quoteIndex = (quoteIndex + 1) % quotes.length;
+            quoteRotator.textContent = quotes[quoteIndex];
+        }, 8000);
+
+        // Audio toggle
+        let isPlaying = false;
+        toggleAudio.addEventListener('click', () => {
+            if (isPlaying) {
+                bgAudio.pause();
+                toggleAudio.textContent = '♫ Play';
+            } else {
+                bgAudio.play().catch(e => console.log('Audio play failed:', e));
+                toggleAudio.textContent = '♫ Pause';
+            }
+            isPlaying = !isPlaying;
+        });
+
+        // Section navigation
+        const showSection = (sectionKey) => {
+            Object.values(sections).forEach(sec => {
+                if (sec) sec.classList.add('hidden');
+            });
+            if (sections[sectionKey]) {
+                sections[sectionKey].classList.remove('hidden');
+                sections[sectionKey].classList.add('fade-in');
+                
+                // Announce section change to screen readers
+                const sectionNames = {
+                    'home': 'Home page',
+                    'garden': 'Garden view',
+                    'timeline': 'Timeline view',
+                    'addMemory': 'Add memory form'
+                };
+                announceToScreenReader(`Now viewing ${sectionNames[sectionKey] || sectionKey}`);
+            }
+        };
+
+        navHome.addEventListener('click', () => showSection('home'));
+        navGarden.addEventListener('click', () => showSection('garden'));
+        navTimeline.addEventListener('click', () => showSection('timeline'));
+        navLoveNotes.addEventListener('click', () => showSection('loveNotes'));
+        navAddMemory.addEventListener('click', () => {
+            // Reset form when adding new memory
+            memoryForm.reset();
+            memoryForm.removeAttribute('data-editing-index');
+            selectedFile = null;
+            updateFileButton();
+            const formTitle = document.querySelector('#add-memory h2');
+            const submitBtn = memoryForm.querySelector('button[type="submit"]');
+            formTitle.textContent = 'Plant a New Bloom';
+            submitBtn.textContent = 'Plant the Memory ✿';
+            showSection('addMemory');
+        });
+        enterGardenBtn.addEventListener('click', () => showSection('garden'));
+
+        // Love notes event listeners
+        addLoveNoteBtn.addEventListener('click', () => {
+            loveNoteForm.reset();
+            loveNoteForm.removeAttribute('data-editing-index');
+            loveNoteModal.classList.remove('hidden');
+        });
+
+        closeLoveNote.addEventListener('click', () => {
+            loveNoteModal.classList.add('hidden');
+        });
+
+        loveNoteForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const text = loveNoteText.value.trim();
+            const title = loveNoteTitle.value.trim();
+            
+            if (text) {
+                const editingIndex = loveNoteForm.getAttribute('data-editing-index');
+                const newNote = {
+                    text: text,
+                    title: title || null,
+                    date: new Date().toISOString().split('T')[0]
+                };
+                
+                if (editingIndex !== null) {
+                    // Editing existing note
+                    const index = parseInt(editingIndex);
+                    allLoveNotes[index] = newNote;
+                    announceToScreenReader('Love note updated successfully');
+                } else {
+                    // Adding new note
+                    allLoveNotes.push(newNote);
+                    announceToScreenReader('Love note saved successfully');
+                }
+                
+                localStorage.setItem('loveNotes', JSON.stringify(allLoveNotes));
+                populateLoveNotes();
+                addLoveNoteToGarden();
+                populateGarden();
+                loveNoteModal.classList.add('hidden');
+                loveNoteForm.reset();
+                loveNoteForm.removeAttribute('data-editing-index');
+            }
+        });
+
+        // File browser event listeners
+        fileBrowseBtn.addEventListener('click', () => {
+            newFile.click();
+        });
+
+        newFile.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                selectedFile = file;
+                updateFileButton();
+                announceToScreenReader(`Selected file: ${file.name}`);
+            }
+        });
+
+        removeFile.addEventListener('click', () => {
+            selectedFile = null;
+            newFile.value = '';
+            updateFileButton();
+            announceToScreenReader('File removed');
+        });
+
+        // Lightbox functionality with video support and touch gestures
+        let viewedCount = 0;
+        let currentLightboxIndex = 0;
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        const openLightbox = (index) => {
+            currentLightboxIndex = index;
+            const memory = allMemories[index];
+            lightboxMedia.innerHTML = '';
+            if (memory.isVideo) {
+                const video = document.createElement('video');
+                video.src = memory.photoUrl;
+                video.controls = true;
+                video.autoplay = true;
+                video.loop = true;
+                video.className = 'w-full h-auto rounded-xl';
+                lightboxMedia.appendChild(video);
+            } else if (memory.isAudio) {
+                const audioContainer = document.createElement('div');
+                audioContainer.className = 'w-full h-64 flex items-center justify-center bg-gradient-to-br from-indigo-100 to-blue-200 rounded-xl';
+                const audioSrc = memory.audioData || memory.audioUrl;
+                audioContainer.innerHTML = `
+                    <div class="text-center">
+                        <div class="text-6xl mb-4">🎤</div>
+                        <audio src="${audioSrc}" controls class="w-full max-w-md"></audio>
+                        <p class="text-sm text-gray-600 mt-2">Voice Message</p>
+                    </div>
+                `;
+                lightboxMedia.appendChild(audioContainer);
+            } else {
+                const img = document.createElement('img');
+                img.src = memory.photoUrl;
+                img.alt = memory.caption;
+                img.className = 'w-full h-auto object-cover rounded-xl';
+                lightboxMedia.appendChild(img);
+            }
+            lightboxCaption.textContent = memory.caption;
+            const dateStr = memory.date ? new Date(memory.date).toLocaleDateString('en-US', { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            }) : 'Unknown Date';
+            lightboxDate.textContent = dateStr;
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('fade-in');
+
+            // Update navigation button states
+            updateNavigationButtons();
+
+            // Voice synthesis using saved settings
+            speakWithSettings(memory.caption);
+
+            // Trigger love letter after 3 views
+            viewedCount++;
+            if (viewedCount === 3) {
+                loveLetter.classList.remove('hidden');
+            }
+        };
+
+        const updateNavigationButtons = () => {
+            prevMemoryBtn.style.opacity = currentLightboxIndex > 0 ? '1' : '0.3';
+            nextMemoryBtn.style.opacity = currentLightboxIndex < allMemories.length - 1 ? '1' : '0.3';
+            prevMemoryBtn.disabled = currentLightboxIndex <= 0;
+            nextMemoryBtn.disabled = currentLightboxIndex >= allMemories.length - 1;
+        };
+
+        // Touch gesture handling for lightbox
+        const handleTouchStart = (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        };
+
+        const handleTouchEnd = (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        };
+
+        const handleSwipe = () => {
+            const swipeThreshold = 50;
+            const diff = touchStartX - touchEndX;
+            
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    // Swipe left - next memory
+                    nextMemory();
+                } else {
+                    // Swipe right - previous memory
+                    previousMemory();
+                }
+            }
+        };
+
+        const nextMemory = () => {
+            if (currentLightboxIndex < allMemories.length - 1) {
+                openLightbox(currentLightboxIndex + 1);
+                announceToScreenReader(`Memory ${currentLightboxIndex + 2} of ${allMemories.length}`);
+            }
+        };
+
+        const previousMemory = () => {
+            if (currentLightboxIndex > 0) {
+                openLightbox(currentLightboxIndex - 1);
+                announceToScreenReader(`Memory ${currentLightboxIndex} of ${allMemories.length}`);
+            }
+        };
+
+        const closeLightbox = () => {
+            lightbox.style.opacity = '0';
+            setTimeout(() => {
+                lightbox.classList.add('hidden');
+                lightbox.classList.remove('fade-in');
+                lightbox.style.opacity = '';
+                lightboxMedia.innerHTML = '';
+                if ('speechSynthesis' in window) speechSynthesis.cancel();
+            }, 350);
+        };
+
+        gardenGrid.addEventListener('click', (e) => {
+            const button = e.target.closest('.flower-btn');
+            if (button) openLightbox(button.dataset.index);
+        });
+
+        timelineGrid.addEventListener('click', (e) => {
+            const button = e.target.closest('.timeline-btn');
+            if (button) openLightbox(button.dataset.index);
+            
+            const editBtn = e.target.closest('.edit-memory-btn');
+            if (editBtn) {
+                e.stopPropagation();
+                editMemory(parseInt(editBtn.dataset.index));
+            }
+            
+            const deleteBtn = e.target.closest('.delete-memory-btn');
+            if (deleteBtn) {
+                e.stopPropagation();
+                deleteMemory(parseInt(deleteBtn.dataset.index));
+            }
+        });
+
+        // Love notes event listeners
+        loveNotesGrid.addEventListener('click', (e) => {
+            const editBtn = e.target.closest('.edit-love-note-btn');
+            if (editBtn) {
+                e.stopPropagation();
+                editLoveNote(parseInt(editBtn.dataset.index));
+            }
+            
+            const deleteBtn = e.target.closest('.delete-love-note-btn');
+            if (deleteBtn) {
+                e.stopPropagation();
+                deleteLoveNote(parseInt(deleteBtn.dataset.index));
+            }
+        });
+
+        const editLoveNote = (index) => {
+            const note = allLoveNotes[index];
+            loveNoteText.value = note.text;
+            loveNoteTitle.value = note.title || '';
+            loveNoteForm.setAttribute('data-editing-index', index);
+            loveNoteModal.classList.remove('hidden');
+        };
+
+        const deleteLoveNote = (index) => {
+            if (confirm('Are you sure you want to delete this love note?')) {
+                allLoveNotes.splice(index, 1);
+                localStorage.setItem('loveNotes', JSON.stringify(allLoveNotes));
+                populateLoveNotes();
+                addLoveNoteToGarden();
+                populateGarden();
+                announceToScreenReader('Love note deleted successfully');
+            }
+        };
+
+        closeLightboxBtn.addEventListener('click', closeLightbox);
+        prevMemoryBtn.addEventListener('click', previousMemory);
+        nextMemoryBtn.addEventListener('click', nextMemory);
+        
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox || e.target === lightboxContent) closeLightbox();
+        });
+
+        // Add touch event listeners for swipe gestures
+        lightboxContent.addEventListener('touchstart', handleTouchStart, false);
+        lightboxContent.addEventListener('touchend', handleTouchEnd, false);
+
+        // Love letter close
+        closeLetter.addEventListener('click', () => {
+            loveLetter.classList.add('hidden');
+        });
+
+        // Voice recorder functionality
+        voiceRecorderBtn.addEventListener('click', () => {
+            voiceRecorder.classList.remove('hidden');
+            announceToScreenReader('Voice recorder opened');
+        });
+
+        closeRecorder.addEventListener('click', () => {
+            voiceRecorder.classList.add('hidden');
+            if (isRecording) {
+                stopRecording();
+            }
+        });
+
+        recordBtn.addEventListener('click', () => {
+            if (isRecording) {
+                stopRecording();
+            } else {
+                startRecording();
+            }
+        });
+
+        playRecording.addEventListener('click', playRecordedAudio);
+        saveRecording.addEventListener('click', saveVoiceMessage);
+
+        // Export functionality
+        exportBtn.addEventListener('click', () => {
+            memoryCount.textContent = allMemories.length;
+            exportModal.classList.remove('hidden');
+            announceToScreenReader('Export options opened');
+        });
+
+        closeExport.addEventListener('click', () => {
+            exportModal.classList.add('hidden');
+        });
+
+        exportJson.addEventListener('click', () => {
+            exportMemories();
+            exportModal.classList.add('hidden');
+        });
+
+        exportText.addEventListener('click', () => {
+            exportAsText();
+            exportModal.classList.add('hidden');
+        });
+
+        // Voice settings functionality
+        voiceSettingsBtn.addEventListener('click', () => {
+            loadVoiceSettings();
+            voiceSettingsModal.classList.remove('hidden');
+            announceToScreenReader('Voice settings opened');
+        });
+
+        closeVoiceSettings.addEventListener('click', () => {
+            voiceSettingsModal.classList.add('hidden');
+        });
+
+        // Update slider values
+        voiceSpeed.addEventListener('input', (e) => {
+            speedValue.textContent = `${e.target.value}x`;
+        });
+
+        voicePitch.addEventListener('input', (e) => {
+            pitchValue.textContent = e.target.value;
+        });
+
+        voiceVolume.addEventListener('input', (e) => {
+            volumeValue.textContent = e.target.value;
+        });
+
+        // Voice selection change
+        voiceSelect.addEventListener('change', (e) => {
+            voiceSettings.voice = e.target.value;
+            updateCurrentVoiceDisplay();
+        });
+
+        // Reset button
+        resetVoiceSettings.addEventListener('click', resetToDefaults);
+
+        testVoice.addEventListener('click', () => {
+            const testText = "Hello Taso, this is how your love letter will sound.";
+            console.log('Testing voice:', voiceSelect.value);
+            
+            // Visual feedback
+            testVoice.innerHTML = '<span>🎵</span><span>Playing...</span>';
+            testVoice.disabled = true;
+            
+            speakWithSettings(testText);
+            
+            // Reset button after speech
+            setTimeout(() => {
+                testVoice.innerHTML = '<span>🎤</span><span>Test This Voice</span>';
+                testVoice.disabled = false;
+            }, 3000);
+        });
+
+        saveVoiceSettings.addEventListener('click', () => {
+            voiceSettings.rate = parseFloat(voiceSpeed.value);
+            voiceSettings.pitch = parseFloat(voicePitch.value);
+            voiceSettings.volume = parseFloat(voiceVolume.value);
+            voiceSettings.voice = voiceSelect.value; // Store the voice name directly
+            
+            localStorage.setItem('voiceSettings', JSON.stringify(voiceSettings));
+            voiceSettingsModal.classList.add('hidden');
+            announceToScreenReader('Voice settings saved');
+        });
+
+        // Edit memory function
+        const editMemory = (index) => {
+            const memory = allMemories[index];
+            if (memory) {
+                // Pre-fill the form with existing data
+                document.getElementById('new-caption').value = memory.caption;
+                document.getElementById('new-url').value = memory.photoUrl;
+                document.getElementById('new-flower').value = memory.flower;
+                document.getElementById('new-date').value = memory.date || '';
+                
+                // Update form title and button
+                const formTitle = document.querySelector('#add-memory h2');
+                const submitBtn = memoryForm.querySelector('button[type="submit"]');
+                formTitle.textContent = 'Edit This Bloom';
+                submitBtn.textContent = 'Update the Memory ✿';
+                
+                // Show the add memory section
+                showSection('addMemory');
+                
+                // Add a flag to indicate we're editing
+                memoryForm.setAttribute('data-editing-index', index);
+            }
+        };
+
+        // Delete memory function
+        const deleteMemory = (index) => {
+            if (confirm('Are you sure you want to delete this memory? This action cannot be undone.')) {
+                // Remove from saved memories if it's a user-added memory
+                if (index >= memories.length) {
+                    const savedIndex = index - memories.length;
+                    savedMemories.splice(savedIndex, 1);
+                    localStorage.setItem('memories', JSON.stringify(savedMemories));
+                    announceToScreenReader('Memory deleted successfully');
+                }
+                // Reload to refresh the display
+                location.reload();
+            }
+        };
+
+        // Add memory form
+        memoryForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const newCaption = document.getElementById('new-caption').value;
+            const newFlower = document.getElementById('new-flower').value;
+            const newDate = document.getElementById('new-date').value;
+            const editingIndex = memoryForm.getAttribute('data-editing-index');
+            
+            if (newCaption && newFlower) {
+                let photoUrl = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDYwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfMF8xKSIvPgo8Y2lyY2xlIGN4PSIzMDAiIGN5PSIyMDAiIHI9IjgwIiBmaWxsPSIjRkZGRkZGIiBmaWxsLW9wYWNpdHk9IjAuOSIvPgo8cGF0aCBkPSJNMjQwIDE2MEwyNDAgMjQwTDI4MCAyMDBMMjQwIDE2MFoiIGZpbGw9IiM2MzY2RjEiLz4KPHA+YXRoIGQ9Ik0zNjAgMTYwTDM2MCAyNDBMMzIwIDIwMEwzNjAgMTYwWiIgZmlsbD0iIzYzNjZGMiIvPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzBfMSIgeDE9IjAiIHkxPSIwIiB4Mj0iNjAwIiB5Mj0iNDAwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiNBMUJDRkYiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjQzJEMkZGIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+';
+                let isVideo = false;
+                
+                if (selectedFile) {
+                    // Convert file to base64 for storage
+                    const reader = new FileReader();
+                    reader.onload = function() {
+                        photoUrl = reader.result;
+                        isVideo = selectedFile.type.startsWith('video/');
+                        
+                        const newMemory = {
+                            photoUrl: photoUrl,
+                            caption: newCaption,
+                            flower: newFlower,
+                            date: newDate || new Date().toISOString().split('T')[0],
+                            isVideo: isVideo
+                        };
+                        
+                        if (editingIndex !== null) {
+                            // Editing existing memory
+                            const index = parseInt(editingIndex);
+                            if (index >= memories.length) {
+                                // Editing a saved memory
+                                const savedIndex = index - memories.length;
+                                savedMemories[savedIndex] = newMemory;
+                            } else {
+                                // Can't edit original memories, add as new
+                                savedMemories.push(newMemory);
+                            }
+                            memoryForm.removeAttribute('data-editing-index');
+                        } else {
+                            // Adding new memory
+                            savedMemories.push(newMemory);
+                        }
+                        
+                        localStorage.setItem('memories', JSON.stringify(savedMemories));
+                        announceToScreenReader(editingIndex !== null ? 'Memory updated successfully' : 'Memory added successfully');
+                        selectedFile = null;
+                        updateFileButton();
+                        location.reload();
+                    };
+                    reader.readAsDataURL(selectedFile);
+                } else {
+                    // No file selected, create memory with default image
+                    const newMemory = {
+                        photoUrl: photoUrl,
+                        caption: newCaption,
+                        flower: newFlower,
+                        date: newDate || new Date().toISOString().split('T')[0],
+                        isVideo: isVideo
+                    };
+                    
+                    if (editingIndex !== null) {
+                        // Editing existing memory
+                        const index = parseInt(editingIndex);
+                        if (index >= memories.length) {
+                            // Editing a saved memory
+                            const savedIndex = index - memories.length;
+                            savedMemories[savedIndex] = newMemory;
+                        } else {
+                            // Can't edit original memories, add as new
+                            savedMemories.push(newMemory);
+                        }
+                        memoryForm.removeAttribute('data-editing-index');
+                    } else {
+                        // Adding new memory
+                        savedMemories.push(newMemory);
+                    }
+                    
+                    localStorage.setItem('memories', JSON.stringify(savedMemories));
+                    announceToScreenReader(editingIndex !== null ? 'Memory updated successfully' : 'Memory added successfully');
+                    selectedFile = null;
+                    updateFileButton();
+                    location.reload();
+                }
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                if (!lightbox.classList.contains('hidden')) closeLightbox();
+                if (!loveLetter.classList.contains('hidden')) loveLetter.classList.add('hidden');
+                if (!voiceRecorder.classList.contains('hidden')) {
+                    voiceRecorder.classList.add('hidden');
+                    if (isRecording) stopRecording();
+                }
+                if (!exportModal.classList.contains('hidden')) exportModal.classList.add('hidden');
+                if (!voiceSettingsModal.classList.contains('hidden')) voiceSettingsModal.classList.add('hidden');
+            }
+            
+            // Keyboard navigation in lightbox
+            if (!lightbox.classList.contains('hidden')) {
+                if (e.key === 'ArrowLeft') {
+                    previousMemory();
+                } else if (e.key === 'ArrowRight') {
+                    nextMemory();
+                }
+            }
+        });
+
+        // Parallax on scroll
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            gardenGrid.style.transform = `translateY(${scrolled * 0.05}px)`;
+        });
+
+        // Initialize love notes
+        populateLoveNotes();
+        addLoveNoteToGarden();
+        
+        // Initialize file browser
+        updateFileButtonText();
+    });
+</script>
+</body>
+</html>
