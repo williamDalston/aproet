@@ -549,7 +549,7 @@
                 <div id="lightbox-media" class="w-full h-auto object-cover rounded-xl mb-4 max-h-[60vh] sm:max-h-[70vh] shadow-lg"></div>
                 <div class="text-center">
                     <p id="lightbox-caption" class="hidden text-amber-800 text-base sm:text-lg md:text-xl font-script leading-relaxed mb-2 italic"></p>
-                    <p id="lightbox-date" class="text-amber-600 text-sm mb-4 font-light"></p>
+                    <p id="lightbox-date" class="hidden text-amber-600 text-sm mb-4 font-light"></p>
                     <div class="text-lg sm:text-xl opacity-55">◇</div>
                 </div>
             </div>
@@ -1512,14 +1512,9 @@
                 img.className = 'w-full h-auto object-cover rounded-xl';
                 lightboxMedia.appendChild(img);
             }
-            // Caption removed - no more romantic text
+            // Caption and date removed - clean image view only
             // lightboxCaption.textContent = memory.caption;
-            const dateStr = memory.date ? new Date(memory.date).toLocaleDateString('en-US', { 
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric' 
-            }) : 'Unknown Date';
-            lightboxDate.textContent = dateStr;
+            // lightboxDate.textContent = dateStr;
             lightbox.classList.remove('hidden');
             lightbox.classList.add('fade-in');
 
